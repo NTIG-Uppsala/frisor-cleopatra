@@ -30,4 +30,4 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Grep Title
-        run: grep -r "Frisör Cleopatra"
+        run: grep "Frisör Cleopatra" index.html
