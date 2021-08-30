@@ -27,8 +27,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Install curl
-        run: sudo apt install curl
+        run: cd wwwroot
 
       # Runs a single command using the runners shell
       - name: echo Current Dirs
-        run: echo | grep -L "head" *
+        run: cat index.html
