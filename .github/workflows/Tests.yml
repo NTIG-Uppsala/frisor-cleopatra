@@ -29,5 +29,5 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: cat index
-        run: cat index.html
+      - name: Grep Title
+        run: grep -r "Frisör Cleopatra"
