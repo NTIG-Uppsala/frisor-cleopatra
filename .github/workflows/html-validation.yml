@@ -1,4 +1,4 @@
-name: HTML Check
+name: HTML Validation
 
 on:
   push:
