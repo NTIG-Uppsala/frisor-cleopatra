@@ -29,5 +29,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Grep Title
-        run: grep "Frisör Cleopatra" index.html
+      - name: Live Check (Curl)
+        run: curl -f https://ntig-uppsala.github.io/frisor-cleopatra/wwwroot/index.html
+  
+      - name: Grab Company Name (Grep)
+        run: grep "Frisör Cleopatra" index.html #Checks if company name is in index.html
