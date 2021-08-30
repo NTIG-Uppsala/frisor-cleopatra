@@ -6,10 +6,6 @@ on:
   pull_request:
     branches: [ master ]
 
-defaults:
-  run:
-    working-directory: src/
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,4 +14,4 @@ jobs:
     - name: Checks HTML5
       uses: Cyb3r-Jak3/html5validator-action@v0.6.1
       with:
-        root: .
+        root: ./src/
