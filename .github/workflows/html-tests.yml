@@ -36,13 +36,13 @@ jobs:
         run: grep "Frisör Cleopatra" index.html #Checks if company name is in index.html
           
       - name: Grab Address (Grep)
-        run: grep "" index.html hitta-hit/index.html #Checks if company name is in index.html
+        run: grep "Street name" index.html hitta-hit/index.html #Checks if company name is in index.html
           
       - name: Grab Opening Hours (Grep)
-        run: grep "" index.html hitta-hit/index.html #Checks if company name is in index.html
+        run: grep "Öppet Tider" index.html hitta-hit/index.html #Checks if company name is in index.html
           
       - name: Grab Phone Number (Grep)
-        run: grep "" index.html hitta-hit/index.html #Checks if company name is in index.html
+        run: grep "Phone Number" index.html hitta-hit/index.html #Checks if company name is in index.html
   
       - name: Grab Email (Grep)
-        run: grep "" index.html hitta-hit/index.html #Checks if company name is in index.html
+        run: grep "Email" index.html hitta-hit/index.html #Checks if company name is in index.html
