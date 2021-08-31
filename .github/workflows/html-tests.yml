@@ -91,7 +91,7 @@ jobs:
         run: grep "Barn (0-13 år)" index.html
 
       - name: Grab service long hair regular (Grep)
-        run: grep "Långt hår stammkund" index.html
+        run: grep "Långt hår stamkund" index.html
 
       - name: Grab service short hair regular (Grep)
         run: grep "Kort hår stamkund" index.html
