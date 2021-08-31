@@ -21,6 +21,10 @@ defaults:
 jobs:
   # This workflow contains a single job called "build"
   Tests:
+    env:
+      ASSETS_PATH: ${{ 'assets/' }}
+      IMAGES_PATH: ${{ 'assets/images/' }}
+      STYLES_PATH: ${{ 'assets/style/' }}
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -36,13 +40,16 @@ jobs:
         run: grep "Frisör Cleopatra" index.html #Checks if company name is in index.html
           
       - name: Grab Address (Grep)
-        run: grep "Street name" index.html hitta-hit/index.html #Checks if company name is in index.html
+        run: grep "" index.html hitta-hit/index.html #Checks if company name is in index.html
           
       - name: Grab Opening Hours (Grep)
-        run: grep "Öppet Tider" index.html hitta-hit/index.html #Checks if company name is in index.html
+        run: grep "" index.html hitta-hit/index.html #Checks if company name is in index.html
           
       - name: Grab Phone Number (Grep)
-        run: grep "Phone Number" index.html hitta-hit/index.html #Checks if company name is in index.html
+        run: grep "" index.html hitta-hit/index.html #Checks if company name is in index.html
   
       - name: Grab Email (Grep)
-        run: grep "Email" index.html hitta-hit/index.html #Checks if company name is in index.html
+        run: grep "" index.html hitta-hit/index.html #Checks if company name is in index.html
+        
+      - name: Check sha sum of fb-icon (SHA256SUM)
+        run: sha256sum --check {$IMAGES_PATH}fb-icon.sha
