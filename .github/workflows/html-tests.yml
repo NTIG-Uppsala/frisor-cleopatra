@@ -21,6 +21,10 @@ defaults:
 jobs:
   # This workflow contains a single job called "build"
   Tests:
+    env:
+      ASSETS_PATH: assets/
+      IMAGES_PATH: assets/images/
+      STYLES_PATH: assets/style/
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -46,3 +50,19 @@ jobs:
   
       - name: Grab Email (Grep)
         run: grep "" index.html hitta-hit/index.html #Checks if company name is in index.html
+        
+      - name: Check sha sum of fb-icon (SHA256SUM)
+        run: |
+          echo $PWD,
+          echo "${IMAGES_PATH}fb-icon.sha",
+          sha256sum --check ${IMAGES_PATH}fb-icon.sha
+      
+      - name: Check sha sum of ig-icon (SHA256SUM)
+        run: sha256sum --check ${IMAGES_PATH}fb-icon.sha
+        
+        
+      - name: Check if fb-icon is in footer and on all pages (Grep)
+        run: grep "fb-icon.png" index.html hitta-hit/index.html
+
+      - name: Check if ig-icon is in footer and on all pages (Grep)
+        run: grep "ig-icon.png" index.html hitta-hit/index.html
