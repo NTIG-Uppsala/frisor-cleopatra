@@ -40,19 +40,19 @@ jobs:
         run: grep "Frisör Cleopatra" index.html #Checks if company name is in index.html
           
       - name: Grab Footer Tag (Grep)
-        run: grep "<footer" index.html #Checks if company name is in index.html
+        run: grep "<footer" index.html #Checks if footer is in index.html
         
       - name: Grab Address (Grep)
-        run: grep "Fjällgatan 32H 981 39 KIRUNA" index.html #Checks if company name is in index.html
+        run: grep "Fjällgatan 32H 981 39 KIRUNA" index.html #Checks if company address is in index.html
           
       - name: Grab Opening Hours (Grep)
-        run: grep "Öppet Tider" index.html #Checks if company name is in index.html
+        run: grep "Öppettider" index.html #Checks if company opening hours is in index.html
           
       - name: Grab Phone Number (Grep)
-        run: grep "0630-555-555" index.html #Checks if company name is in index.html
+        run: grep "0630-555-555" index.html #Checks if company phone number is in index.html
   
       - name: Grab Email (Grep)
-        run: grep "info@ntig-uppsala.github.io" index.html #Checks if company name is in index.html
+        run: grep "info@ntig-uppsala.github.io" index.html #Checks if company e-mail is in index.html
         
       - name: Check sha sum of fb-icon (SHA256SUM)
         run: sha256sum --check ${IMAGES_PATH}fb-icon.sha
