@@ -40,7 +40,7 @@ jobs:
         run: grep "Frisör Cleopatra" index.html #Checks if company name is in index.html
           
       - name: Grab Footer Tag (Grep)
-        run: grep "<footer>" index.html hitta-hit/index.html #Checks if company name is in index.html
+        run: grep "<footer" index.html hitta-hit/index.html #Checks if company name is in index.html
         
       - name: Grab Address (Grep)
         run: grep "Fjällgatan 32H 981 39 KIRUNA" index.html hitta-hit/index.html #Checks if company name is in index.html
