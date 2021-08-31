@@ -53,7 +53,7 @@ jobs:
         
       - name: Check sha sum of fb-icon (SHA256SUM)
         run: |
-          pwd,
+          echo $PWD,
           echo "${IMAGES_PATH}fb-icon.sha",
           sha256sum --check ${IMAGES_PATH}fb-icon.sha
       
