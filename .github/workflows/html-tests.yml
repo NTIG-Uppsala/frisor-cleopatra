@@ -51,13 +51,14 @@ jobs:
       - name: Grab Email (Grep)
         run: grep "" index.html hitta-hit/index.html #Checks if company name is in index.html
         
-      - name: Check sha sum of ig-icon (SHA256SUM)
-        run: sha256sum --check ${IMAGES_PATH}fb-icon.sha
-        
       - name: Check sha sum of fb-icon (SHA256SUM)
         run: |
           echo "${IMAGES_PATH}fb-icon.sha",
           sha256sum --check ${IMAGES_PATH}fb-icon.sha
+      
+      - name: Check sha sum of ig-icon (SHA256SUM)
+        run: sha256sum --check ${IMAGES_PATH}fb-icon.sha
+        
         
       - name: Check if fb-icon is in footer and on all pages (Grep)
         run: grep "fb-icon.png" index.html hitta-hit/index.html
