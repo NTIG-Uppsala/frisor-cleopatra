@@ -8,7 +8,7 @@ $(function(){
     });
     
     $(window).scroll(function() {
-        if ($(document).scrollTop() > 50) {
+        if ($(document).scrollTop() > 600) {
             $('.nav').addClass('affix');
             console.log("OK");
         } else {
@@ -16,3 +16,4 @@ $(function(){
         }
     });
 });
+
