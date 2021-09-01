@@ -38,8 +38,9 @@ jobs:
       
       - name: Install firefox for screenshot later
         run: | 
+          sudo apt install nodejs,
           sudo apt install npm,
-          npm install --global capture-website-cli
+          sudo npm install --global capture-website-cli
       
       - name: Live Check (Curl)
         run: curl -f https://ntig-uppsala.github.io/frisor-cleopatra/wwwroot/index.html
