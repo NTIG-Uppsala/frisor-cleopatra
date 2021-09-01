@@ -1,25 +1,20 @@
-# Frisör Cleopatra
-## Table of contents
-* [General info](#general-info)
-* [Test Status](#test-status)
-* [Contributors](#contributors)
+# <p align="center">Frisör Cleopatra</p>
+## <p align="center">Table of contents</p>
+[<p align="center">General info</p>](#general-info)
+[<p align="center">Test Status</p>](#test-status)
+[<p align="center">Contributors</p>](#contributors)
 
-## General info
+## <p align="center">General info</p>
+<p align="center">A static webiste for a client. Its focused on working well on phones and without javascript</p>
 
-	
-## Test Status
-[![HTML Tests](https://github.com/NTIG-Uppsala/frisor-cleopatra/actions/workflows/html-tests.yml/badge.svg)](https://github.com/NTIG-Uppsala/frisor-cleopatra/actions/workflows/html-tests.yml)
-
-[![HTML Validation](https://github.com/NTIG-Uppsala/frisor-cleopatra/actions/workflows/html-validation.yml/badge.svg?branch=master)](https://github.com/NTIG-Uppsala/frisor-cleopatra/actions/workflows/html-validation.yml)
-
-### Current website view
+### <p align="center">Current website view</p>
 ![MainPage View](https://raw.githubusercontent.com/NTIG-Uppsala/frisor-cleopatra/master/wwwroot/pdf/MainPage.png)
 
-## Contributors
-### Product Owner
-* [@kasperda](https://github.com/kasperda)
+## <p align="center">Contributors</p>
+### <p align="center">Product Owner</p>
+ [<p align="center">@kasperda</p>](https://github.com/kasperda)
 
-### Developers
-* [@liljekvist](https://github.com/liljekvist)
-* [@SebastianClavensjo](https://github.com/SebastianClavensjo)
-* [@Jonatan-Mone](https://github.com/Jonatan-Mone)
+### <p align="center">Developers</p>
+[<p align="center">@liljekvist</p>](https://github.com/liljekvist)
+[<p align="center">@SebastianClavensjo</p>](https://github.com/SebastianClavensjo)
+[<p align="center">@Jonatan-Mone</p>](https://github.com/Jonatan-Mone)
