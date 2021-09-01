@@ -35,7 +35,7 @@ jobs:
       
       - name: Install Dependencies
         run: |
-          sudo apt update,
+          sudo apt-get update,
           sudo apt-get install wkhtmltopdf -y,
           sudo ln -s /usr/bin/wkhtmltopdf /usr/local/bin/html2pdf
           
