@@ -3,27 +3,27 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
-<html lang="sv">
+<html lang="sv"> <!-- Sätter språk som våran kodstandard säger -->
     <head>
         <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
         <link rel="manifest" href="favicon_io/site.webmanifest">
         
-        <meta charset="utf-8">
+        <meta charset="utf-8"> <!-- För att kunna använda åäö -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Sätter wievport för att kunna användas senare-->
         <title>Frisör Cleopatra</title>
-        <link rel="stylesheet" href="assets/styles/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/styles/style.css">
+        <link rel="stylesheet" href="assets/styles/bootstrap/bootstrap.min.css"> <!-- bootstrap5 stylesheet -->
+        <link rel="stylesheet" href="assets/styles/style.css"> <!-- Våran stylesheet -->
 
     </head>
 
 <body>
 
-    <div class="bg-image">
+    <div class="bg-image">  <!-- Bakrund div. Lägger en bild i bakrunden-->
         <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
-            <div class="centerMain align-items-center justify-content-center d-flex flex-column bg-dark">
+            <div class="centerMain align-items-center justify-content-center d-flex flex-column bg-dark"> <!-- alignar till mitten och gör en låda bakom texten-->
                 <h1 class="text-white">Frisör Cleopatra</h1> <br><br>
                 <h5 class="text-white">Öppettider</h5>
                 <ul class="text-white">
@@ -40,7 +40,7 @@
     <div class="d-flex bg-dark">
         <div class="container mt-5 bg-dark margin-div">
             <h1 class="margin-header" style="text-align: center;">Bilder</h1>
-            <ul class="gallery hidden-mobile"> <!-- Removes the gallery element from Phones -->
+            <ul class="gallery hidden-mobile">  <!-- Bilder visas såhär när man har en skärm som är mer än 1000px bred -->
                 <li class="gallery">
                     <span class="gallery">Våra Lokaler</span>
                     <img alt="Våra Lokaler" class="gallery" src='assets/images/bild1.jpg' /></li>
@@ -59,7 +59,7 @@
                     <span class="gallery">Hår Förlängning</span>
                     <img alt="Herr Klippning" class="gallery" src='assets/images/bild5.jpg' /></li>
             </ul>
-            <div class="hidden-big-screen">
+            <div class="hidden-big-screen"> <!-- Bilder visas såhär när man har en skärm som är mindre än 1000px bred -->
                 <img alt="Våra Lokaler" class="responsive" src='assets/images/bild1.jpg' />
                 <img alt="Damklippning" class="responsive" src='assets/images/bild2.jpg' />
                 <img alt="Herrklippning" class="responsive" src='assets/images/bild3.jpg' />
@@ -68,8 +68,9 @@
             </div>
         </div>
     </div>
-    <div class="d-flex bg-dark">
-        <div class="container mt-5 bg-dark margin-div">
+    <!-- blur mellan divs för en snyggare övergång? -->
+    <div class="d-flex bg-darker"> <!-- Början av Produkt section -->
+        <div class="container mt-5 bg-darker margin2-div">
             <h1 class="text-center margin-header">Produkter/Tjänster</h1>
             <div class="row">
                 <div class="col-sm-4 text-center">
@@ -129,19 +130,17 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <footer class="bg-dark text-center text-white">
+    <footer class="bg-dark text-center text-white"> <!-- Här börjar footer-->
         <div class="container p-4">
             <section class="">
-                <hr style="color: gray;">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Kontakta oss:</h5>
-
-                        <p>
-                            Fjällgatan 32H 981 39 KIRUNA
-                            <br> <br> 0630-555-555
-                            <br> info@ntig-uppsala.github.io
-                        </p>
+                        <h5 class="text-uppercase">Kontakta oss</h5>
+                            <ul class="list-unstyled">
+                                <li>Fjällgatan 32H 981 39 KIRUNA</li>
+                                <li>0630-555-555</li>
+                                <li>info@ntig-uppsala.github.io</li>
+                            </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
