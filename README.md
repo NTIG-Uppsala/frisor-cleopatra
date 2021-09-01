@@ -11,7 +11,10 @@
 [![HTML Tests](https://github.com/NTIG-Uppsala/frisor-cleopatra/actions/workflows/html-tests.yml/badge.svg)](https://github.com/NTIG-Uppsala/frisor-cleopatra/actions/workflows/html-tests.yml)
 
 [![HTML Validation](https://github.com/NTIG-Uppsala/frisor-cleopatra/actions/workflows/html-validation.yml/badge.svg?branch=master)](https://github.com/NTIG-Uppsala/frisor-cleopatra/actions/workflows/html-validation.yml)
-	
+
+### Current website view
+![MainPage View](https://raw.githubusercontent.com/NTIG-Uppsala/frisor-cleopatra/master/wwwroot/pdf/MainPage.png)
+
 ## Contributors
 ### Product Owner
 * [@kasperda](https://github.com/kasperda)
