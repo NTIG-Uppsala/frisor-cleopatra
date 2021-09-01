@@ -32,7 +32,15 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
+      
+      - name: Install Dependencies
+        run: |
+          sudo apt-get install wkhtmltopdf,
+          sudo ln -s /usr/bin/wkhtmltopdf /usr/local/bin/html2pdf
+          
+      - name: Run wkhtmltopdf
+        run: html2pdf index.html pdf/mainPage.pdf
+        
       - name: Live Check (Curl)
         run: curl -f https://ntig-uppsala.github.io/frisor-cleopatra/wwwroot/index.html
   
@@ -59,12 +67,42 @@ jobs:
       
       - name: Check sha sum of ig-icon (SHA256SUM)
         run: sha256sum --check ${IMAGES_PATH}fb-icon.sha
+
+      - name: Check sha sum of customer picture 1 (SHA256SUM)
+        run: sha256sum --check ${IMAGES_PATH}bild1.sha
+      
+      - name: Check sha sum of customer picture 2 (SHA256SUM)
+        run: sha256sum --check ${IMAGES_PATH}bild2.sha
+        
+      - name: Check sha sum of customer picture 3 (SHA256SUM)
+        run: sha256sum --check ${IMAGES_PATH}bild3.sha
+      
+      - name: Check sha sum of customer picture 4 (SHA256SUM)
+        run: sha256sum --check ${IMAGES_PATH}bild4.sha
+        
+      - name: Check sha sum of customer picture 5 (SHA256SUM)
+        run: sha256sum --check ${IMAGES_PATH}bild5.sha
         
       - name: Check if fb-icon is in footer and on all pages (Grep)
         run: grep "fb-icon.png" index.html
 
       - name: Check if ig-icon is in footer and on all pages (Grep)
         run: grep "ig-icon.png" index.html
+        
+      - name: Check if customer picture 1 is in footer and on all pages (Grep)
+        run: grep "bild1.jpg" index.html
+
+      - name: Check if customer picture 2 is in footer and on all pages (Grep)
+        run: grep "bild2.jpg" index.html
+        
+      - name: Check if customer picture 3 is in footer and on all pages (Grep)
+        run: grep "bild3.jpg" index.html
+
+      - name: Check if customer picture 4 is in footer and on all pages (Grep)
+        run: grep "bild4.jpg" index.html
+        
+      - name: Check if customer picture 5 is in footer and on all pages (Grep)
+        run: grep "bild5.jpg" index.html
 
       - name: Grab service long hair (Grep)
         run: grep "Långt hår" index.html
@@ -95,3 +133,14 @@ jobs:
 
       - name: Grab service short hair regular (Grep)
         run: grep "Kort hår stamkund" index.html
+        
+      - name: Commit files that has been changed
+        run: |
+          git config --local user.name "Github Push Bot"
+          git add ./pdf
+          git commit -m "Updating the repository with new generated pdf webiste view"
+      - name: Push changes # push the output folder to your repo
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true
