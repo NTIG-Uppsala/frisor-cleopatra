@@ -125,3 +125,20 @@ ul {
   ul.gallery li.gallery:hover {
     width:750px;
   }
+
+  @media (max-width: 1000px) {
+    .hidden-mobile {
+      display: none;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .hidden-big-screen {
+      display: none;
+    }
+  }
+
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
