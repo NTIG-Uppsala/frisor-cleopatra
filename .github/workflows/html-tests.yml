@@ -33,6 +33,14 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
+      - name: Update apt sources
+        run: sudo apt update
+      
+      - name: Install firefox for screenshot later
+        run: | 
+          sudo apt install npm,
+          npm install --global capture-website-cli
+      
       - name: Live Check (Curl)
         run: curl -f https://ntig-uppsala.github.io/frisor-cleopatra/wwwroot/index.html
   
@@ -126,16 +134,9 @@ jobs:
       - name: Grab service short hair regular (Grep)
         run: grep "Kort hår stamkund" index.html
         
-      - name: HTML to PDF
-        # You may pin to the exact commit or the version.
-        # uses: fifsky/html-to-pdf-action@44d977811fe614e8eba4471a108f6bd355709ddd
-        uses: fifsky/html-to-pdf-action@v0.0.2
-        with:
-          # html file path
-          htmlFile: index.html
-          # output file path
-          outputFile: pdf/mainPage.pdf
-        
+      - name: HTML to Image
+        run: capture-website index.html --output=pdf/MainPage.png --full-page --overwrite
+      
       - name: Commit files that has been changed
         run: |
           git config --local user.name "Github Push Bot"
