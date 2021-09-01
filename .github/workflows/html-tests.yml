@@ -143,7 +143,7 @@ jobs:
           git config --local user.name "Github Push Bot"
           git rm --cached -r ./pdf
           git add ./pdf
-          git commit --allow-empty -- quiet -m "Updating the repository with new generated image webiste view"
+          git commit --allow-empty --quiet -m "Updating the repository with new generated image webiste view"
       - name: Push changes # push the output folder to your repo
         uses: ad-m/github-push-action@master
         with:
