@@ -13,6 +13,7 @@ body{
 }
 
 h1,
+li,
 h2,
 h3,
 h4,
@@ -21,6 +22,11 @@ p
 {
     font-family: 'Bebas Neue', cursive;
     color: white;
+    text-decoration: none;
+    list-style: none;
+}
+ul {
+    padding-left: 0px;
 }
 
 .centerMain {
@@ -40,3 +46,74 @@ p
     -o-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out;
 }
+
+*, *:after, *:before {
+    padding:0;
+    margin:0;
+    font-family:Arial;
+  }
+  
+  
+  ul.gallery {
+    position:relative;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    list-style:none;
+    width:955px;
+    height:450px;
+    border-radius:3px;
+    overflow:hidden;
+    box-shadow:1px 1px 3px 1px;
+  }
+  
+  
+  li.gallery {
+    position:relative;
+    width:190px;
+    height:450px;
+    float:left;
+    border-left:1px solid white;
+    -webkit-transition:all 0.7s;
+    -moz-transition:all 0.7s;
+    transition:all 0.7s;
+    box-shadow:-2px 0 10px 2px;
+  }
+  
+  ul.gallery li:first-child {
+    border:none;
+  }
+  
+  span.gallery {
+    display:block;
+    position:absolute;
+    bottom:0;
+    width:50%;
+    color:white;
+    white-space:nowrap;
+    padding:20px;
+    background: -moz-linear-gradient(left,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+  background: linear-gradient(to right,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+  
+  }
+  
+  img.gallery {
+    width:800px;
+    height:450px;
+  }
+  
+  ul.gallery:hover li.gallery {
+    width:50px;  
+  }
+  
+  
+  ul.gallery li.gallery:hover {
+    width:750px;
+  }
