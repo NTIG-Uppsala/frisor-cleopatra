@@ -8,7 +8,7 @@
         <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-        <link rel="manifest" href="favicon_io/site.webmanifest">
+        <link rel="manifest" href="assets/images/site.webmanifest"><!-- Favico Stuff -->
         
         <meta charset="utf-8"> <!-- För att kunna använda åäö -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,27 +16,50 @@
         <title>Frisör Cleopatra</title>
         <link rel="stylesheet" href="assets/styles/bootstrap/bootstrap.min.css"> <!-- bootstrap5 stylesheet -->
         <link rel="stylesheet" href="assets/styles/style.css"> <!-- Våran stylesheet -->
-
+        <script src="assets/js/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/script.js"></script>
     </head>
 
 <body>
-
-    <div class="bg-image">  <!-- Bakrund div. Lägger en bild i bakrunden-->
-        <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
-            <div class="centerMain align-items-center justify-content-center d-flex flex-column bg-dark"> <!-- alignar till mitten och gör en låda bakom texten-->
-                <h1 class="text-white">Frisör Cleopatra</h1> <br><br>
-                <h5 class="text-white">Öppettider</h5>
-                <ul class="text-white">
-                    <li>Måndagar 10-16</li>
-                    <li>Tisdagar 10-16</li>
-                    <li>Onsdagar 10-16</li>
-                    <li>Torsdagar 10-16</li>
-                    <li>Fredagar 10-16</li>
-                    <li>Lördagar 12-15</li>
+    <!-- Början av navbar-->
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="assets/images/favicon-32x32.png" alt="">Frisör Cleopatra</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#"></a></li><!-- Index 1-->
+                    <li><a href="#"></a></li><!-- Index 2-->
+                    <li><a href="#"></a></li><!-- Index 3-->
+                    <li><a href="#"></a></li><!-- Index 4-->
                 </ul>
             </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
         </div>
-    </div>
+    </nav>
+    <section class="home">
+        <div class="bg-image">  <!-- Bakrund div. Lägger en bild i bakrunden-->
+            <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
+                <div class="centerMain align-items-center justify-content-center d-flex flex-column bg-dark"> <!-- alignar till mitten och gör en låda bakom texten-->
+                    <h1 class="text-white">Frisör Cleopatra</h1> <br><br>
+                    <h5 class="text-white">Öppettider</h5>
+                    <ul class="text-white">
+                        <li>Måndagar 10-16</li>
+                        <li>Tisdagar 10-16</li>
+                        <li>Onsdagar 10-16</li>
+                        <li>Torsdagar 10-16</li>
+                        <li>Fredagar 10-16</li>
+                        <li>Lördagar 12-15</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> 
     <div class="d-flex bg-dark">
         <div class="container mt-5 bg-dark margin-div">
             <h1 class="margin-header" style="text-align: center;">Bilder</h1>
