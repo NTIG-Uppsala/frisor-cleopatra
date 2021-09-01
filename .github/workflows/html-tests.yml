@@ -38,7 +38,7 @@ jobs:
       
       - name: Install firefox for screenshot later
         run: | 
-          apt-get install nodejs npm -y,
+          apt-get install nodejs npm,
           npm install --global capture-website-cli
       
       - name: Live Check (Curl)
