@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  HTML Tests:
+  HTML-Tests:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2 # Requried will all actions
