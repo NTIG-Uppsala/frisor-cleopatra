@@ -2,8 +2,20 @@ $(function(){
     $('.navTrigger').click(function () {
         $(this).toggleClass('active');
         console.log("Clicked menu");
+        if ($(document).scrollTop() < 600) {
+            $('.nav').toggleClass('affix');
+            console.log("OK1");
+        }
         $("#mainListDiv").toggleClass("show_list");
-        $("#mainListDiv").fadeIn();
+
+        if($('.navTrigger').hasClass('active')) {
+            console.log("FadeOut");
+            $("#mainListDiv").fadeIn();
+        }
+        else {
+            console.log("FadeIn");
+            $("#mainListDiv").fadeOut();
+        }
     
     });
     
