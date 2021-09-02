@@ -23,5 +23,5 @@ jobs:
       uses: celinekurpershoek/link-checker@v1.0.0
       with:
         # Url of site
-        url: ./wwwroot/ # default is https://github.com/celinekurpershoek/github-actions-link-checker
+        url: ./wwwroot/index.html # default is https://github.com/celinekurpershoek/github-actions-link-checker
         # Overwrite standard skipping rel=nofollow links
