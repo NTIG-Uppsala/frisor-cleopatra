@@ -148,7 +148,7 @@ ul {
     width:750px;
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 999px) {
     .hidden-mobile {
       display: none;
     }
