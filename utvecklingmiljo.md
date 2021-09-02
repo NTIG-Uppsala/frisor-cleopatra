@@ -10,7 +10,7 @@ https://www.w3schools.com/js/js_conventions.asp <br>
 
 ## Development enviroment
 Anubis works in VS code. 
-### Versioner
+### Versions
 
  * `Version: 1.59.1
 Commit: 3866c3553be8b268c8a7f8c0482c0c0177aa8bfa
