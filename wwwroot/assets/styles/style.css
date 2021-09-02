@@ -78,6 +78,8 @@ ul {
     transition: opacity 1s ease-in-out;
 }
 
+/* Image Gallery */
+
 *, *:after, *:before {
     padding:0;
     margin:0;
@@ -147,13 +149,15 @@ ul {
   ul.gallery li.gallery:hover {
     width:750px;
   }
-
+  
+  /* Makes the image gallery hidden for better functionality on smaller devices */
   @media (max-width: 999px) {
     .hidden-mobile {
       display: none;
     }
   }
 
+  /* Makes the image alternative for smaller devices hidden on larger devices */
   @media (min-width: 1000px) {
     .hidden-big-screen {
       display: none;
@@ -231,7 +235,6 @@ ul {
 
 /* Home section */
 
-
 .navTrigger {
     display: none;
 }
@@ -244,7 +247,7 @@ ul {
 }
 
 
-/* Media qurey section */
+/* Media query section */
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .container {

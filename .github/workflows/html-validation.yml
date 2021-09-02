@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  HTML-Tests:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2 # Requried will all actions
@@ -16,3 +16,12 @@ jobs:
       with:
         root: ./wwwroot/ # Folder with source files
         blacklist: bootstrap
+
+    - name: broken-link-check
+      # You may pin to the exact commit or the version.
+      # uses: celinekurpershoek/link-checker@163dde2c3dff309f338b3346113bcd17015c168f
+      uses: celinekurpershoek/link-checker@v1.0.0
+      with:
+        # Url of site
+        url: ./wwwroot/index.html # default is https://github.com/celinekurpershoek/github-actions-link-checker
+        # Overwrite standard skipping rel=nofollow links
