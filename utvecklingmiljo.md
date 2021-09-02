@@ -1,16 +1,16 @@
-## Programmeringsspråk
+## Programming language
 * HTML5
 * CSS3
 * JavaScript
 
-## Kodningsstandard
+## Coding standards
 https://www.w3schools.com/htmL/html5_syntax.asp <br>
 https://developer.mozilla.org/en-US/docs/MDN/Guidelines/Code_guidelines/CSS <br>
 https://www.w3schools.com/js/js_conventions.asp <br>
 
-## Utvecklingsmiljö
-Anubis arbetar i VS code. 
-Versioner
+## Development enviroment
+Anubis works in VS code. 
+### Versioner
 
  * `Version: 1.59.1
 Commit: 3866c3553be8b268c8a7f8c0482c0c0177aa8bfa
