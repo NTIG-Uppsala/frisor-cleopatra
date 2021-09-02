@@ -17,12 +17,12 @@ jobs:
         root: ./wwwroot/ # Folder with source files
         blacklist: bootstrap
         
-    - uses: actions/cache@v2 
-      with: 
-        path: tmp/.htmltest 
+    - uses: actions/cache@v2
+      with:
+        path: tmp/.htmltest
         key: ${{ runner.os }}-htmltest
-    
-    - name: HTML Test for links and other syntax not supported by HTML5 tests
-      run: | 
-            curl https://htmltest.wjdp.uk/ | 
-            bash bin/htmltest
+
+    - name: HTML Test
+      run: |
+        curl 'https://htmltest.wjdp.uk' | bash
+        bin/htmltest
