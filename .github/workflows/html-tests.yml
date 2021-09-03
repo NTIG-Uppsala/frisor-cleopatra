@@ -63,26 +63,6 @@ jobs:
       - name: Grab Email (Grep)
         run: grep "info@ntig-uppsala.github.io" index.html #Checks if company e-mail is in index.html
         
-      - name: Check sha sum of fb-icon (SHA256SUM)
-        run: sha256sum --check ${IMAGES_PATH}fb-icon.sha
-      
-      - name: Check sha sum of ig-icon (SHA256SUM)
-        run: sha256sum --check ${IMAGES_PATH}fb-icon.sha
-
-      - name: Check sha sum of customer picture 1 (SHA256SUM)
-        run: sha256sum --check ${IMAGES_PATH}bild1.sha
-      
-      - name: Check sha sum of customer picture 2 (SHA256SUM)
-        run: sha256sum --check ${IMAGES_PATH}bild2.sha
-        
-      - name: Check sha sum of customer picture 3 (SHA256SUM)
-        run: sha256sum --check ${IMAGES_PATH}bild3.sha
-      
-      - name: Check sha sum of customer picture 4 (SHA256SUM)
-        run: sha256sum --check ${IMAGES_PATH}bild4.sha
-        
-      - name: Check sha sum of customer picture 5 (SHA256SUM)
-        run: sha256sum --check ${IMAGES_PATH}bild5.sha
         
       - name: Check if fb-icon is in footer and on all pages (Grep)
         run: grep "fb-icon.png" index.html
