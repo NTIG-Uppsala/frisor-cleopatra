@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Noticia+Text&display=swap');
 
 :root {
   --bs-darker: #161616;
@@ -51,7 +52,14 @@ ul,
 a,
 p 
 {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Noticia Text', cursive;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+.logo-header-font
+{
+    font-family: 'Allison', cursive;
     color: white;
     text-decoration: none;
     list-style: none;
