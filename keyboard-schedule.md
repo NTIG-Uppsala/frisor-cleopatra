@@ -1,7 +1,7 @@
-## Tangentbordschema
-Schema för vilka som sitter vid tangentbordet vid parprogrammering. Schemat fylls i vid början av dagen.
+## Keyboard schedule
+Schedule detailing who sits at the keyboard when programming together. Schedule is filled in at the start of each workday.
 
-| Timme        | 3 personer     | 2 personer  |
+| Hour        | All present     | One missing  |
 | ------------- |:-------------:| -----:|
 | 09:00        |  |        Jonatan  |
 | 10:00        |     |   Sebastian |
@@ -10,4 +10,4 @@ Schema för vilka som sitter vid tangentbordet vid parprogrammering. Schemat fyl
 | 13:00        |     |   Sebastian |
 | 14:00        |     |    Jonatan |
 | 13:00        |     |   Sebastian |
-| Slut         |     |   -         |
+| End         |     |   -         |
