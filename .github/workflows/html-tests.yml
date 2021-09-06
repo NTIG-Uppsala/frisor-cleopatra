@@ -52,7 +52,7 @@ jobs:
         run: grep "<footer" index.html #Checks if footer is in index.html
         
       - name: Grab Address (Grep)
-        run: grep "Fjällgatan 32H 981 39 KIRUNA" index.html #Checks if company address is in index.html
+        run: grep "Fjällgatan 32H 981 39 Kiruna" index.html #Checks if company address is in index.html
           
       - name: Grab Opening Hours (Grep)
         run: grep "Öppettider" index.html #Checks if company opening hours is in index.html
