@@ -26,15 +26,6 @@ body{
       
 }
 
-.margin-div{
-  margin-bottom: 7%;
-}
-.margin2-div{
-  margin-bottom: 3%;
-}
-.margin-header{
-  margin-bottom: 5%;
-}
 .bg-darker{
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-darker-rgb), var(--bs-bg-opacity)) !important;
@@ -64,6 +55,7 @@ p
     text-decoration: none;
     list-style: none;
 }
+
 ul {
     padding-left: 0px;
 }
