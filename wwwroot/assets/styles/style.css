@@ -48,6 +48,10 @@ p
     text-decoration: none;
     list-style: none;
 }
+.subtitle
+{
+    font-size: 40px;
+}
 .logo-header-font
 {
     font-family: 'Allison', cursive;
