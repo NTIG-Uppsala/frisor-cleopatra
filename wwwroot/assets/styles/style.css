@@ -87,6 +87,11 @@ ul {
     transition: opacity 1s ease-in-out;
 }
 
+.icon-link{
+    height: 50px;
+    width: auto;
+}
+
 /* Image Gallery */
 
 *, *:after, *:before {
