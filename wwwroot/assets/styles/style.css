@@ -258,6 +258,8 @@ ul {
     padding-bottom: 20px;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
+    padding: 0;
+    background-color: #111;
 }
 
 
@@ -526,9 +528,4 @@ ul {
     100% {
         transform: translateY(-9px) rotate(135deg);
     }
-}
-
-.affix {
-    padding: 0;
-    background-color: #111;
 }

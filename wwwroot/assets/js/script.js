@@ -3,10 +3,7 @@ $(function(){
     $('.navTrigger').click(function () {
         $(this).toggleClass('active');
         console.log("Clicked menu");
-        if ($(document).scrollTop() < 600) {
-            $('.nav').toggleClass('affix');
-            console.log("OK1");
-        }
+
         $("#mainListDiv").toggleClass("show_list");
 
         if($('.navTrigger').hasClass('active')) {
