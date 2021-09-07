@@ -115,9 +115,12 @@ jobs:
       - name: Grab service short hair regular (Grep)
         run: grep "Kort hår stamkund" index.html
         
-      - name: HTML to Image
+      - name: HTML to Image desktop
         run: capture-website index.html --output=pdf/MainPage.png --full-page --overwrite
       
+      - name: HTML to Image phone
+        run: capture-website index.html --output=pdf/MainPagePhone.png --emulate-device="iPhone X" --full-page --overwrite
+
       - name: Commit files that has been changed
         run: |
           git config --local user.name "Github Push Bot"
