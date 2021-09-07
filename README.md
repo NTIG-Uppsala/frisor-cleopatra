@@ -5,7 +5,7 @@
 [<p align="center">Contributors</p>](#contributors)
 
 ## <p align="center">General info</p>
-<p align="center">A static webiste for a client. Its focused on working well on phones and without javascript</p>
+<p align="center">A static website for a client. Its focused on working well on phones and without javascript</p>
 
 ### <p align="center">Current website view</p>
 ![MainPage View](https://raw.githubusercontent.com/NTIG-Uppsala/frisor-cleopatra/master/wwwroot/pdf/MainPage.png)
