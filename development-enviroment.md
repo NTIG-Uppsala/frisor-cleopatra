@@ -1,7 +1,7 @@
 ## Programming language
 * HTML5
 * CSS3
-* JavaScript
+* JavaScript 1.7
 
 ## Coding standards
 https://www.w3schools.com/htmL/html5_syntax.asp <br>
