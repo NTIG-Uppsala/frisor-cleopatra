@@ -7,9 +7,10 @@
 ## <p align="center">General info</p>
 <p align="center">A static website for a client. Its focused on working well on phones and without javascript</p>
 
-### <p align="center">Current website view</p>
-![MainPage View](https://raw.githubusercontent.com/NTIG-Uppsala/frisor-cleopatra/master/wwwroot/pdf/MainPage.png)
-
+### <p align="center">Current website view Desktop</p>
+[<p align="center">MainPage View</p>](https://raw.githubusercontent.com/NTIG-Uppsala/frisor-cleopatra/master/wwwroot/pdf/MainPage.png)
+### <p align="center">Current website view Phone</p>
+[<p align="center">MainPage View Phone </p>](https://github.com/NTIG-Uppsala/frisor-cleopatra/blob/master/wwwroot/pdf/MainPagePhone.png)
 ## <p align="center">Contributors</p>
 ### <p align="center">Product Owner</p>
  [<p align="center">@kasperda</p>](https://github.com/kasperda)
