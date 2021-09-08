@@ -28,10 +28,10 @@
             </div>
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
-                    <li><a href="#">Home</a></li><!-- Index 1 -->
-                    <li><a href="#Tjanster">Tjänster</a></li><!-- Index 2 -->
-                    <li><a href="#"></a></li><!-- Index 3 -->
-                    <li><a href="#"></a></li><!-- Index 4 -->
+                    <li class="navLink"><a href="#">Home</a></li><!-- Index 1 -->
+                    <li class="navLink"><a href="#Oppettider">Öppettider</a></li><!-- Index 2 -->
+                    <li class="navLink"><a href="#Bilder">Bilder</a></li><!-- Index 3 -->
+                    <li class="navLink"><a href="#Tjanster">Tjänster</a></li><!-- Index 4 -->
                 </ul>
             </div>
             <span class="navTrigger"> <!-- This is the navbar on phones -->
@@ -61,116 +61,122 @@
         </div>
     </section>
     <!-- Beginning of the Opening hours section -->
-    <div class="d-flex bg-darker">
-        <div class="container-lg flex-column justify-content-center align-items-center mt-5">
-            <h2 class="text-white subtitle text-center">Öppettider</h2>
-            <div class="row justify-content-center">
-                <ul class="col-3 text-white standard-text justify-content-center">
-                    <li>Måndagar</li>
-                    <li>Tisdagar</li>
-                    <li>Onsdagar</li>
-                    <li>Torsdagar</li>
-                    <li>Fredagar</li>
-                    <li>Lördagar</li>
-                </ul>
-                <ul class="col-3 text-white standard-text pb-3 text-end">
-                    <li>10-16</li>
-                    <li>10-16</li>
-                    <li>10-16</li>
-                    <li>10-16</li>
-                    <li>10-16</li>
-                    <li>12-15</li>
-                </ul>
+    <section id="Oppettider">
+        <div class="d-flex bg-darker">
+            <div class="container-lg flex-column justify-content-center align-items-center mt-5">
+                <h2 class="text-white subtitle text-center">Öppettider</h2>
+                <div class="row justify-content-center">
+                    <ul class="col-3 text-white standard-text justify-content-center">
+                        <li>Måndagar</li>
+                        <li>Tisdagar</li>
+                        <li>Onsdagar</li>
+                        <li>Torsdagar</li>
+                        <li>Fredagar</li>
+                        <li>Lördagar</li>
+                    </ul>
+                    <ul class="col-3 text-white standard-text pb-3 text-end">
+                        <li>10-16</li>
+                        <li>10-16</li>
+                        <li>10-16</li>
+                        <li>10-16</li>
+                        <li>10-16</li>
+                        <li>12-15</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="bilder" class="d-flex bg-dark noselect"> <!-- Beginning of the Images section -->
-        <div class="container mt-5 bg-dark mb-5 " style="min-width: 100%;">
-            <h2 class="mb-5 subtitle" style="text-align: center;">Bilder</h2>
-            <ul class="gallery hidden-mobile p-0">  <!-- Images shown when the device has a screen larger than 1000px in width -->
-                <li class="gallery">
-                    <span class="gallery">Våra Lokaler</span>
-                    <img alt="Våra Lokaler" class="gallery" src='assets/images/bild1.jpg' /></li>
-                <li class="gallery">
-                    <span class="gallery">Klippning Långt Hår</span>
-                    <img alt="Klippning Långt Hår" class="gallery" src='assets/images/bild2.jpg' /></li>
-                <li class="gallery">
-                    <span class="gallery">Klippning Kort Hår</span>
-                    <img alt="Klippning Kort Hår" class="gallery" src='assets/images/bild3.jpg' /></li>
-                <li class="gallery">
-                    <span class="gallery">Hårprodukter</span>
-                    <img alt="Hårprodukter" class="gallery" src='assets/images/bild4.jpg' /></li>
-                <li class="gallery">
-                    <span class="gallery">Hårförlängning</span>
-                    <img alt="Hår Förlängning" class="gallery" src='assets/images/bild5.jpg' /></li>
-            </ul>
-            <div class="hidden-big-screen"> <!-- Images shown when the device has a screen smaller than 1000px in width -->
-                <img alt="Våra Lokaler" class="responsive" src='assets/images/bild1.jpg' />
-                <img alt="Klippning Långt Hår" class="responsive" src='assets/images/bild2.jpg' />
-                <img alt="Klippning Kort Hår" class="responsive" src='assets/images/bild3.jpg' />
-                <img alt="Hårprodukter" class="responsive" src='assets/images/bild4.jpg' />
-                <img alt="Hår Förlängning" class="responsive" src='assets/images/bild5.jpg' />
+    </section>
+    <section id="Bilder">
+        <div class="d-flex bg-dark noselect"> <!-- Beginning of the Images section -->
+            <div class="container mt-5 bg-dark mb-5 " style="min-width: 100%;">
+                <h2 class="mb-5 subtitle" style="text-align: center;">Bilder</h2>
+                <ul class="gallery hidden-mobile p-0">  <!-- Images shown when the device has a screen larger than 1000px in width -->
+                    <li class="gallery">
+                        <span class="gallery">Våra Lokaler</span>
+                        <img alt="Våra Lokaler" class="gallery" src='assets/images/bild1.jpg' /></li>
+                    <li class="gallery">
+                        <span class="gallery">Klippning Långt Hår</span>
+                        <img alt="Klippning Långt Hår" class="gallery" src='assets/images/bild2.jpg' /></li>
+                    <li class="gallery">
+                        <span class="gallery">Klippning Kort Hår</span>
+                        <img alt="Klippning Kort Hår" class="gallery" src='assets/images/bild3.jpg' /></li>
+                    <li class="gallery">
+                        <span class="gallery">Hårprodukter</span>
+                        <img alt="Hårprodukter" class="gallery" src='assets/images/bild4.jpg' /></li>
+                    <li class="gallery">
+                        <span class="gallery">Hårförlängning</span>
+                        <img alt="Hår Förlängning" class="gallery" src='assets/images/bild5.jpg' /></li>
+                </ul>
+                <div class="hidden-big-screen"> <!-- Images shown when the device has a screen smaller than 1000px in width -->
+                    <img alt="Våra Lokaler" class="responsive" src='assets/images/bild1.jpg' />
+                    <img alt="Klippning Långt Hår" class="responsive" src='assets/images/bild2.jpg' />
+                    <img alt="Klippning Kort Hår" class="responsive" src='assets/images/bild3.jpg' />
+                    <img alt="Hårprodukter" class="responsive" src='assets/images/bild4.jpg' />
+                    <img alt="Hår Förlängning" class="responsive" src='assets/images/bild5.jpg' />
+                </div>
             </div>
         </div>
-    </div>
+    </section>  
     <!-- Beginning of the Services section -->
-    <div class="d-flex bg-darker">
-        <div class="container-lg mt-5 bg-darker mb-5">
-            <h2 class="text-center mb-5 subtitle" id="Tjanster">Tjänster</h2>
-            <div class="row">
-                <div id="klippning" class="col-sm-4 text-center">
-                    <h3>Långt hår</h3>
-                    <p class="standard-text">600 kr</p>
+    <section id="Tjanster">
+        <div class="d-flex bg-darker">
+            <div class="container-lg mt-5 bg-darker mb-5">
+                <h2 class="text-center mb-5 subtitle">Tjänster</h2>
+                <div class="row">
+                    <div id="klippning" class="col-sm-4 text-center">
+                        <h3>Långt hår</h3>
+                        <p class="standard-text">600 kr</p>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <h3>Kort hår</h3>
+                        <p class="standard-text">200 kr</p>
+                    </div>
+                    <div id="fargning" class="col-sm-4 text-center">
+                        <h3>Färgning</h3>
+                        <p class="standard-text">560 kr</p>
+                    </div>
                 </div>
-                <div class="col-sm-4 text-center">
-                    <h3>Kort hår</h3>
-                    <p class="standard-text">200 kr</p>
+                <div class="row">
+                    <div id="skagg" class="col-sm-4 text-center">
+                        <h3>Skägg</h3>
+                        <p class="standard-text">150 kr</p>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <h3>Toppning</h3>
+                        <p class="standard-text">200 kr</p>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <h3>Barn (0-13 år)</h3>
+                        <p class="standard-text">150 kr</p>
+                    </div>
                 </div>
-                <div id="fargning" class="col-sm-4 text-center">
-                    <h3>Färgning</h3>
-                    <p class="standard-text">560 kr</p>
+                <div class="row">
+                    <div id="forlangning" class="col-sm-4 text-center">
+                        <h3>Extensions kort</h3>
+                        <p class="standard-text">300 kr</p>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <h3>Extensions normal</h3>
+                        <p class="standard-text">400 kr</p>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <h3>Extensions lång</h3>
+                        <p class="standard-text">500 kr</p>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div id="skagg" class="col-sm-4 text-center">
-                    <h3>Skägg</h3>
-                    <p class="standard-text">150 kr</p>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <h3>Toppning</h3>
-                    <p class="standard-text">200 kr</p>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <h3>Barn (0-13 år)</h3>
-                    <p class="standard-text">150 kr</p>
-                </div>
-            </div>
-            <div class="row">
-                <div id="forlangning" class="col-sm-4 text-center">
-                    <h3>Extensions kort</h3>
-                    <p class="standard-text">300 kr</p>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <h3>Extensions normal</h3>
-                    <p class="standard-text">400 kr</p>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <h3>Extensions lång</h3>
-                    <p class="standard-text">500 kr</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 text-center">
-                    <h3>Långt hår stamkund</h3>
-                    <p class="standard-text">500 kr</p>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <h3>Kort hår stamkund</h3>
-                    <p class="standard-text">150 kr</p>
+                <div class="row">
+                    <div class="col-sm-4 text-center">
+                        <h3>Långt hår stamkund</h3>
+                        <p class="standard-text">500 kr</p>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <h3>Kort hår stamkund</h3>
+                        <p class="standard-text">150 kr</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <footer class="bg-dark text-center text-white"> <!-- Beginning of the footer -->
         <div class="container-lg p-4">

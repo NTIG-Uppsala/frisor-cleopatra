@@ -7,23 +7,32 @@ $(function(){
             $('.nav').toggleClass('affix');
             console.log("OK1");
         }
-
+        
         $("#mainListDiv").toggleClass("show_list");
 
         if($('.navTrigger').hasClass('active')) {
-            console.log("FadeOut");
+            console.log("FadeIn");
             $("#mainListDiv").fadeIn();
             // add listener to disable scroll
             noScroll();
         }
         else {
-            console.log("FadeIn");
+            console.log("FadeOut");
             $("#mainListDiv").fadeOut();
             // Remove listener to re-enable scroll
             enableScroll()
         }
     
     });
+    $( ".navLink" ).click(function() {
+        if($('.navTrigger').hasClass('active')){
+            $("#mainListDiv").toggleClass("show_list");
+            $('.navTrigger').toggleClass('active');
+            $('.nav').toggleClass('affix');
+            enableScroll();
+        }
+      });
+
     
     $(window).scroll(function() {
         if(disableScroll){
