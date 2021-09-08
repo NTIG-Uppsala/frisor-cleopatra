@@ -118,8 +118,14 @@ jobs:
       - name: HTML to Image desktop
         run: capture-website index.html --output=pdf/MainPage.png --full-page --overwrite
       
-      - name: HTML to Image phone
-        run: capture-website index.html --output=pdf/MainPagePhone.png --emulate-device="iPhone X" --full-page --overwrite
+      - name: HTML to Image Iphone X
+        run: capture-website index.html --output=pdf/MainPagePhoneX.png --emulate-device="iPhone X" --full-page --overwrite
+
+      - name: HTML to Image Pixel 2
+        run: capture-website index.html --output=pdf/MainPagePixel2.png --emulate-device="Pixel 2" --full-page --overwrite
+        
+      - name: HTML to Image Galaxy 21
+        run: capture-website index.html --output=pdf/MainPageGalaxy21.png --width=1080 --height=2400 --full-page --overwrite
 
       - name: Commit files that has been changed
         run: |
