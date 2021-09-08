@@ -215,14 +215,14 @@ hr.style14 {
   }
   
   /* Makes the image gallery hidden for better functionality on smaller devices */
-  @media (max-width: 999px) {
+  @media only screen and (hover: none) and (pointer: coarse) {
     .hidden-mobile {
       display: none;
     }
   }
 
   /* Makes the image alternative for smaller devices hidden on larger devices */
-  @media (min-width: 1000px) {
+  @media (hover: hover) {
     .hidden-big-screen {
       display: none;
     }
@@ -326,7 +326,8 @@ hr.style14 {
     }
 }
 
-@media screen and (max-width:999px) {
+@media only screen and (hover: none) and (pointer: coarse){
+
     @-webkit-keyframes fadeIn {
         0% {opacity: 0;}
         100% {opacity: 1;}
@@ -390,8 +391,8 @@ hr.style14 {
     .nav div.media_button {
         display: block;
     }
+    
 }
-
 
 /* Animation */
 /* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
