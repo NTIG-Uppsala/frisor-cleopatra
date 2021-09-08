@@ -104,6 +104,11 @@ hr.style14 {
     padding: 5%;
     border-radius: 5%;
 }
+
+.bg-tint {
+    background: rgba(0, 0, 0, 0.3);
+}
+
 .bg-image{
     background-image: url("../images/bild1.jpg");
     background-blend-mode: overlay;
@@ -118,6 +123,7 @@ hr.style14 {
     height: 100%;
     -webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */
     filter: blur(3px);
+    transform: scale(1.1);
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;
