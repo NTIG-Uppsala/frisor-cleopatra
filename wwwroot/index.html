@@ -28,8 +28,8 @@
             </div>
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
-                    <li><a href="#"></a></li><!-- Index 1 -->
-                    <li><a href="#"></a></li><!-- Index 2 -->
+                    <li><a href="#">Home</a></li><!-- Index 1 -->
+                    <li><a href="#Tjanster">Tjänster</a></li><!-- Index 2 -->
                     <li><a href="#"></a></li><!-- Index 3 -->
                     <li><a href="#"></a></li><!-- Index 4 -->
                 </ul>
@@ -41,32 +41,22 @@
             </span>
         </div>
     </nav>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
     <section class="home">
-        <div class="bg-image">  <!-- Background div. Puts an image in background -->
-            <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
-                <div class="centerMain align-items-center justify-content-center d-flex flex-column bg-dark"> <!-- aligns a box with the opening hours information, in the middle of the screen -->
-                    <h1 class="text-white">Frisör Cleopatra</h1> <br><br>
-                    <h2 class="text-white">Öppettider</h2>
-                    <div class="row">
-                        <ul class="col text-white standard-text">
-                            <li>Måndagar</li>
-                            <li>Tisdagar</li>
-                            <li>Onsdagar</li>
-                            <li>Torsdagar</li>
-                            <li>Fredagar</li>
-                            <li>Lördagar</li>
-                        </ul>
-                        <ul class="col text-white standard-text">
-                            <li>10-16</li>
-                            <li>10-16</li>
-                            <li>10-16</li>
-                            <li>10-16</li>
-                            <li>10-16</li>
-                            <li>12-15</li>
-                        </ul>
-                    </div>
-                    <p class="standard-text text-white text-center">Ring nu och boka på:<br> <a href="tel:0630-555-555">0630-555-555</a></p>
-                </div>
+        <div class="bg-image"></div>  <!-- Background div. Puts an image in background --> 
+        <div class="d-flex">
+            <div class="d-flex container-lg mt-5 mb-5 main-text">
+                <ul class="standard-text">
+                    <li><h2 class="subtitle">Välkommen till flera stunder i lyx</h2></li>
+                    <li><p>För att boka en tid tveka inte att ring oss på <a href="tel:0630-555-555">0630-555-555</a></p></li>
+                    <li>    
+                        <a href="#Tjanster"><button class="button">Priser och Tjänster</button></a>
+                        <a href="#Oppettider"><button class="button">Öpperttider</button></a>
+                    </li>
+                </ul>
+    
             </div>
         </div>
     </section> 
@@ -102,7 +92,7 @@
     <!-- Beginning of the Services section -->
     <div class="d-flex bg-darker">
         <div class="container-lg mt-5 bg-darker mb-5">
-            <h2 class="text-center mb-5 subtitle">Tjänster</h2>
+            <h2 class="text-center mb-5 subtitle" id="Tjanster">Tjänster</h2>
             <div class="row">
                 <div id="klippning" class="col-sm-4 text-center">
                     <h3>Långt hår</h3>
@@ -157,9 +147,6 @@
             </div>
         </div>
     </div>
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
 
     <footer class="bg-dark text-center text-white"> <!-- Beginning of the footer -->
         <div class="container-lg p-4">
