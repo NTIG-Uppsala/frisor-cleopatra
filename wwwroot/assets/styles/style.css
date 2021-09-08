@@ -71,9 +71,10 @@ p
 
 .bg-image{
     background-image: url("../images/bild1.jpg");
+    background-blend-mode: overlay;
     background-repeat: no-repeat!important;
     background-position: center!important;
-    height: 100vh;
+    height: 75vh;
     background-size: cover!important;
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;

@@ -3,7 +3,7 @@ $(function(){
     $('.navTrigger').click(function () {
         $(this).toggleClass('active');
         console.log("Clicked menu");
-        if ($(document).scrollTop() < 600) {
+        if ($(document).scrollTop() < 150) {
             $('.nav').toggleClass('affix');
             console.log("OK1");
         }
@@ -29,7 +29,7 @@ $(function(){
         if(disableScroll){
             console.log("Doing nothing")
         }    
-        else if (($(document).scrollTop() > 600)) {
+        else if (($(document).scrollTop() > 150)) {
             $('.nav').addClass('affix');
             console.log("OK");
         } 
