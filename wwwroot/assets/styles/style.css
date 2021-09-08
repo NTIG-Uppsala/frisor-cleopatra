@@ -1,5 +1,4 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');*/
-@import url('https://fonts.googleapis.com/css2?family=Allison&family=Noticia+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&display=swap');
 
 :root {
   --bs-darker: #161616;
@@ -22,8 +21,17 @@ html {
   background-color: rgba(var(--bs-darker-rgb), var(--bs-bg-opacity)) !important;
 }
 
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+
 h1,
-li,
 h2,
 h3,
 h4,
@@ -34,7 +42,7 @@ ul,
 a,
 p 
 {
-    font-family: 'Noticia Text', cursive;
+    font-family: 'Cuprum';
     color: white;
     text-decoration: none;
     list-style: none;
@@ -50,8 +58,7 @@ p
 
 .logo-header-font
 {
-    font-family: 'Allison', cursive;
-    color: white;
+    font-family: 'Cuprum';
     text-decoration: none;
     list-style: none;
 }
@@ -176,6 +183,12 @@ p
 
 /* Navbar section */
 
+.logo {
+    width: 48px;
+    height: auto;
+    vertical-align: sub!important;
+}
+
 .nav {
   z-index:1000;
     width: 100%;
@@ -245,8 +258,6 @@ p
     padding-bottom: 20px;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    padding: 0;
-    background-color: #111;
 }
 
 
@@ -515,4 +526,10 @@ p
     100% {
         transform: translateY(-9px) rotate(135deg);
     }
+}
+
+.affix {
+    padding: 0;
+    background-color: #111;
+    color: white;
 }
