@@ -145,6 +145,33 @@ hr.style14 {
     height: 50px;
     width: auto;
 }
+figcaption {
+    margin-top: -2.6rem;
+}
+
+.maintxt {position: relative;}
+.maintxt > img, .overlay-text {position: absolute;}
+
+span.image-text {
+    position:relative;
+    bottom:0;
+    left:0;
+    width:50%;
+    color:white;
+    white-space:nowrap;
+    padding:20px;
+    background: -moz-linear-gradient(left,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+  }
+
+  .image-list {
+    padding-left: 0;
+  }
 
 /* Image Gallery */
 
@@ -238,6 +265,9 @@ hr.style14 {
   }
 
   .responsive {
+    max-width: 100%;
+    max-height: 50vh;
+    overflow: hidden;
     width: 100%;
     height: auto;
   }
@@ -252,7 +282,12 @@ hr.style14 {
 .logo {
     width: 48px;
     height: auto;
-    vertical-align: sub!important;
+    vertical-align: sub;
+}
+.logo img {
+    width: 48px;
+    height: auto;
+    vertical-align: text-bottom!important;
 }
 
 .nav {
