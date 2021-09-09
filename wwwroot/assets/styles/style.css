@@ -322,6 +322,54 @@ ul.gallery li.gallery:hover {
         font-size: 1rem;
     }
 }
+@media only screen and (max-width:1080px){
+    .subtitle {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width:750px){
+    .subtitle {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width:350px){
+    .subtitle {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:1080px){
+    .main-section-app {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width:750px){
+    .main-section-app {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:350px){
+    .main-section-app {
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.7rem;
+    }
+}
+
 
 .nav div.logo a:hover {
     color: #8f8e8e;
