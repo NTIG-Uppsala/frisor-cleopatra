@@ -324,7 +324,7 @@ ul.gallery li.gallery:hover {
     text-decoration: none;
     color: #fff;
     line-height: 65px;
-    font-size: 2.4rem;
+    font-size: 1.9rem;
 }
 @media (max-width:751px){
     .nav div.main_list ul li a {
@@ -423,7 +423,7 @@ ul.gallery li.gallery:hover {
     .nav div.main_list ul li a {
         text-align: center;
         width: 100%;
-        font-size: 3rem;
+        font-size: 2rem;
         padding: 20px;
    }
     .nav div.media_button {
@@ -493,7 +493,7 @@ ul.gallery li.gallery:hover {
     .nav div.main_list ul li a {
         text-align: center;
         width: 100%;
-        font-size: 3rem;
+        font-size: 2rem;
         padding: 20px;
    }
     .nav div.media_button {
