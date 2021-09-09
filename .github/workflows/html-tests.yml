@@ -115,9 +115,10 @@ jobs:
       - name: Grab service short hair regular (Grep)
         run: grep "Kort hår stamkund" index.html
         
+        #Beacuse of the way the screenshot is taken we can nether set hover nor pointer atributes and therefor the easiest way to fix it is to just remove the element
       - name: HTML to Image desktop
-        run: capture-website index.html --output=../views/MainPage.png --full-page --overwrite
-      
+        run: capture-website index.html --output=../views/MainPage.png --full-page --overwrite --userAgent="Mozilla/5.0 (Windows NT 10.0; rv:91.0) Gecko/20100101 Firefox/91.0" --removeElements=.hidden-big-screen
+        
       - name: HTML to Image Iphone X
         run: capture-website index.html --output=../views/MainPagePhoneX.png --emulate-device="iPhone X" --full-page --overwrite
 
