@@ -299,6 +299,30 @@ ul.gallery li.gallery:hover {
     color: #fff;
     font-size: 2.5rem;
 }
+@media only screen and (max-width:1080px){
+    .nav div.logo a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width:750px){
+    .nav div.logo a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width:350px){
+    .nav div.logo a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+    }
+}
+
 .nav div.logo a:hover {
     color: #8f8e8e;
 }
