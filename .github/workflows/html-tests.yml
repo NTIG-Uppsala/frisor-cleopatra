@@ -52,8 +52,11 @@ jobs:
         run: grep "<footer" index.html #Checks if footer is in index.html
         
       - name: Grab Address (Grep)
-        run: grep "Fjällgatan 32H 981 39 Kiruna" index.html #Checks if company address is in index.html
-          
+        run: grep "Fjällgatan 32H" index.html #Checks if company address is in index.html
+      
+      - name: Grab City (Grep)
+        run: grep "981 39 Kiruna" index.html #Checks if company address is in index.html
+        
       - name: Grab Opening Hours (Grep)
         run: grep "Öppettider" index.html #Checks if company opening hours is in index.html
           
@@ -130,7 +133,7 @@ jobs:
           git config --local user.name "Github Push Bot"
           git rm --cached -r ../views
           git add ../views
-          git commit --allow-empty --quiet -m "Updating the repository with new generated image webiste view"
+          git commit --allow-empty --quiet -m "Updating the repository with new generated image website view"
       - name: Push changes # push the output folder to your repo
         uses: ad-m/github-push-action@master
         with:
