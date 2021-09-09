@@ -252,13 +252,13 @@ span.image-text {
   }
 
   /* Makes the image alternative for smaller devices hidden on larger devices */
-  @media (hover: hover) and (min-width: 1000px) {
+  @media only screen and (hover: hover) and (min-width: 1000px) {
     .hidden-big-screen {
       display: none;
     }
   }
 
-  @media (hover: hover) and (max-width: 999px) {
+  @media only screen and (hover: hover) and (max-width: 999px) {
     .hidden-mobile {
       display: none;
     }
