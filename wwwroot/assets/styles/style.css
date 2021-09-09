@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Cuprum&display=swap');
+@font-face {
+    font-family: 'Cuprum';
+    src: url(../fonts/Cuprum-Regular.ttf);
+  }
 
 :root {
   --bs-darker: #161616;
