@@ -74,11 +74,11 @@ hr.style14 {
     display: inline-block;
     font-size: 22px;
     margin: 4px 2px;
-    transition-duration: 0.4s;
+    transition-duration: 0.1s;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.0);
     color: white;
-    border: 5px solid #ffffff;
+    border: 3px solid #ffffff;
     border-radius: 8px;
 }
 .button:hover {
