@@ -334,7 +334,7 @@ ul.gallery li.gallery:hover {
         font-size: 1.7rem;
    }
 }
-@media (max-width:621px){
+@media (max-width:690px){
     .nav div.main_list ul li a {
         text-decoration: none;
         color: #fff;
@@ -430,7 +430,7 @@ ul.gallery li.gallery:hover {
         display: block;
    }
 }
-@media only screen and (max-width:530px){
+@media only screen and (max-width:590px){
     @-webkit-keyframes fadeIn {
         0% {
            opacity: 0;
