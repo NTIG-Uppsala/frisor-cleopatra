@@ -225,14 +225,14 @@ span.image-text {
   }
 
   /* Shows the image gallery for bigger monitors*/
-  @media (hover: hover) and (min-width: 1000px) {
+  @media only screen and (hover: hover) and (min-width: 1000px) {
     .hidden-big-screen {
       display: none;
     }
   }
 
   /* Makes the image gallery hidden for better functionality on smaller monitors*/
-  @media (hover: hover) and (max-width: 999px) {
+  @media only screen and (hover: hover) and (max-width: 999px) {
     .hidden-mobile {
       display: none;
     }
