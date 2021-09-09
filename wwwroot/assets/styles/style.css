@@ -22,20 +22,32 @@ html::-webkit-scrollbar {
     background-color: rgba(var(--bs-darker-rgb), var(--bs-bg-opacity)) !important;
 }
 .noselect {
-    -webkit-touch-callout: none;
-   /* iOS Safari */
-    -webkit-user-select: none;
-   /* Safari */
-    -khtml-user-select: none;
-   /* Konqueror HTML */
-    -moz-user-select: none;
-   /* Old versions of Firefox */
-    -ms-user-select: none;
-   /* Internet Explorer/Edge */
-    user-select: none;
-   /* Non-prefixed version, currently*/
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently*/
+  }
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -63px;
+    visibility: hidden;
 }
-h1, h2, h3, h4, h5, span, li, ul, a, p {
+
+/* Fonts */
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+li,
+ul,
+a,
+p {
     font-family: 'Cuprum';
     color: white;
     text-decoration: none;
