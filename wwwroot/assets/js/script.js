@@ -1,27 +1,41 @@
 $(function(){
     $(document).ready(function(){
         $('.nav').toggleClass('affix');
+        if(matchMedia('(pointer:coarse)').matches) {
+            $('.navTrigger').css("display","block");
+        }
+        else if (matchMedia("(max-width:530px)").matches) {
+            $('.navTrigger').css("display","block");
+        }
     });
+
+    $(window).on('resize', function(){
+        var win = $(this); //this = window
+        if (win.width() <= 530 || matchMedia('(pointer:coarse)').matches) {
+            $('.navTrigger').css("display","block");
+        }
+        else if (win.width() >= 530){
+            $('.navTrigger').css("display","none");
+        }
+
+    });
+    
 
     var disableScroll = false;
     $('.navTrigger').click(function () {
         $(this).toggleClass('active');
-        console.log("Clicked menu");
         if ($(document).scrollTop() < 150) {
             $('.nav').toggleClass('affix');
-            console.log("OK1");
         }
         
         $("#mainListDiv").toggleClass("show_list");
 
         if($('.navTrigger').hasClass('active')) {
-            console.log("FadeIn");
             $("#mainListDiv").fadeIn();
             // add listener to disable scroll
             noScroll();
         }
         else {
-            console.log("FadeOut");
             $("#mainListDiv").fadeOut();
             // Remove listener to re-enable scroll
             enableScroll()
@@ -40,11 +54,10 @@ $(function(){
     
     $(window).scroll(function() {
         if(disableScroll){
-            console.log("Doing nothing")
+            //Do Nothing
         }    
         else if (($(document).scrollTop() > 150)) {
             $('.nav').addClass('affix');
-            console.log("OK");
         } 
         else {
             $('.nav').removeClass('affix');

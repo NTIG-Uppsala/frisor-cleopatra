@@ -378,9 +378,6 @@ ul.gallery li.gallery:hover {
            opacity: 1;
        }
    }
-    .navTrigger {
-        display: block;
-   }
     div.container{
         padding-top: 10%;
    }
@@ -450,9 +447,7 @@ ul.gallery li.gallery:hover {
            opacity: 1;
        }
    }
-    .navTrigger {
-        display: block;
-   }
+
     div.container{
         padding-top: 10%;
    }
