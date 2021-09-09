@@ -116,13 +116,13 @@ jobs:
         run: grep "Kort hår stamkund" index.html
         
       - name: HTML to Image desktop
-        run: capture-website index.html --output=pdf/MainPage.png --full-page --overwrite
+        run: capture-website index.html --output=../views/MainPage.png --full-page --overwrite
       
       - name: HTML to Image Iphone X
-        run: capture-website index.html --output=pdf/MainPagePhoneX.png --emulate-device="iPhone X" --full-page --overwrite
+        run: capture-website index.html --output=../views/MainPagePhoneX.png --emulate-device="iPhone X" --full-page --overwrite
 
       - name: HTML to Image Pixel 2
-        run: capture-website index.html --output=pdf/MainPagePixel2.png --emulate-device="Pixel 2" --full-page --overwrite
+        run: capture-website index.html --output=../views/MainPagePixel2.png --emulate-device="Pixel 2" --full-page --overwrite
 
       - name: Commit files that has been changed
         run: |
