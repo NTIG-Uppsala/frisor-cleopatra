@@ -1,4 +1,8 @@
 $(function(){
+    $(document).ready(function(){
+        $('.nav').toggleClass('affix');
+    });
+
     var disableScroll = false;
     $('.navTrigger').click(function () {
         $(this).toggleClass('active');
