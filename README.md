@@ -10,7 +10,8 @@
 ### <p align="center">Current website view Desktop</p>
 [<p align="center">MainPage View</p>](https://gitcdn.link/cdn/NTIG-Uppsala/frisor-cleopatra/a3339b37705aac4f27a745d421466ec4d4eb2506/wwwroot/pdf/MainPage.png)
 ### <p align="center">Current website view Phone</p>
-[<p align="center">MainPage View Phone </p>](https://gitcdn.link/repo/NTIG-Uppsala/frisor-cleopatra/master/wwwroot/pdf/MainPagePhone.png)
+[<p align="center">MainPage View Pixel 2 </p>](https://gitcdn.link/repo/NTIG-Uppsala/frisor-cleopatra/master/wwwroot/pdf/MainPagePixel2.png)
+[<p align="center">MainPage View Iphone X </p>](https://gitcdn.link/repo/NTIG-Uppsala/frisor-cleopatra/master/wwwroot/pdf/MainPagePhoneX.png)
 ## <p align="center">Contributors</p>
 ### <p align="center">Product Owner</p>
  [<p align="center">@kasperda</p>](https://github.com/kasperda)
