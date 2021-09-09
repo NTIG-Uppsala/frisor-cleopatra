@@ -124,12 +124,7 @@ hr.style14 {
 figcaption {
     margin-top: -2.6rem;
 }
-.maintxt {
-   position: relative;
-}
-.maintxt > img, .overlay-text {
-   position: absolute;
-}
+
 span.image-text {
     position:relative;
     bottom:0;
