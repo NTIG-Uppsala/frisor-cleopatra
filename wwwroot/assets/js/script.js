@@ -108,3 +108,39 @@ $(function () {
         disableScroll = false;
     }
 });
+
+function checkPostalNumber(input){
+    let validNumbers = [98139, 98140, 98142, 98138];
+    if(!isNaN(parseInt(input))) {
+        for(let i = 0; i < validNumbers.length;){
+            if (validNumbers[i] == input){
+                return true;
+            }
+            i++;
+        }
+    }
+    else {
+       
+        alert("You can only use numbers!");
+        return false;
+    }
+
+    return false;
+}
+
+function getPostalNumberInput(){ 
+    var PostalNumber = document.getElementById('inputPostalNumber').value;
+    let target = document.getElementById('postalNumberMessage');
+    /* some other fields */
+    /* now call ur function by passing the above values */
+    let isPossible = checkPostalNumber(PostalNumber);
+    if(isPossible){
+        target.innerHTML = "Vi har hemkörning till dig!";
+        target.style.display = "block";
+        target.classList.add('text-success');
+    } else {
+        target.innerHTML = "Vi har inte hemkörning till dig!";
+        target.style.display = "block";
+        target.classList.add('text-danger');
+    }
+}

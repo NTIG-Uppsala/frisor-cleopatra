@@ -37,6 +37,13 @@ html::-webkit-scrollbar {
     visibility: hidden;
 }
 
+input[type=text] {
+    width: 100%;
+    padding: 0;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
 /* Fonts */
 h1,
 h2,
