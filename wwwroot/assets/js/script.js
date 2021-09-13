@@ -120,9 +120,12 @@ function checkPostalNumber(input){
     return false;
 }
 
-function getPostalNumberInput(){ 
+function getPostalNumberInput(testData){ 
     var PostalNumber = document.getElementById('inputPostalNumber').value;
     PostalNumber = PostalNumber.split(" ").join("");
+    if(!(testData === undefined)){
+        PostalNumber = testData;
+    }
     let target = document.getElementById('postalNumberMessage');
     let isOnlyNumbers = true;
     /* some other fields */
@@ -148,4 +151,5 @@ function getPostalNumberInput(){
         target.classList.add('text-danger');
         target.classList.remove('text-success');
     }
+    return isPossible;
 }
