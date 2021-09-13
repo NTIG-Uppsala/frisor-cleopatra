@@ -117,6 +117,10 @@ jobs:
 
       - name: Grab service short hair regular (Grep)
         run: grep "Kort hår stamkund" index.html
+
+
+      - name: Grab header for "hemkörning" (Grep)
+        run: grep "Hemkörning" index.html
         
         #Beacuse of the way the screenshot is taken we can nether set hover nor pointer atributes and therefor the easiest way to fix it is to just remove the element
       - name: HTML to Image desktop
