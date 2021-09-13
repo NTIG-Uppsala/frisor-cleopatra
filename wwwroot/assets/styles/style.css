@@ -218,6 +218,15 @@ span.image-text {
     margin:0;
     font-family:Arial;
 }
+
+#inputPostalNumber {
+    max-width: 100px;
+}
+#inputSubmit {
+    padding: 0px 15px;
+    font-size: 1rem;
+}
+
 ul.gallery {
     position:relative;
     top:0;

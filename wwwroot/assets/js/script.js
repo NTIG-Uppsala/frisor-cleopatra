@@ -111,36 +111,41 @@ $(function () {
 
 function checkPostalNumber(input){
     let validNumbers = [98139, 98140, 98142, 98138];
-    if(!isNaN(parseInt(input))) {
         for(let i = 0; i < validNumbers.length;){
             if (validNumbers[i] == input){
                 return true;
             }
             i++;
         }
-    }
-    else {
-       
-        alert("You can only use numbers!");
-        return false;
-    }
-
     return false;
 }
 
 function getPostalNumberInput(){ 
     var PostalNumber = document.getElementById('inputPostalNumber').value;
+    PostalNumber = PostalNumber.split(" ").join("");
     let target = document.getElementById('postalNumberMessage');
+    let isOnlyNumbers = true;
     /* some other fields */
     /* now call ur function by passing the above values */
-    let isPossible = checkPostalNumber(PostalNumber);
-    if(isPossible){
+    if(isNaN(parseInt(PostalNumber))) {
+        isOnlyNumbers = false;
+    }
+
+    let isPossible = checkPostalNumber(parseInt(PostalNumber));
+    if(isPossible && isOnlyNumbers){
         target.innerHTML = "Vi har hemkörning till dig!";
         target.style.display = "block";
         target.classList.add('text-success');
+        target.classList.remove('text-danger');
+    } else if(!isOnlyNumbers){
+        target.innerHTML = "Du får bara använda siffror i fältet.";
+        target.style.display = "block";
+        target.classList.add('text-danger');
+        target.classList.remove('text-success');
     } else {
         target.innerHTML = "Vi har inte hemkörning till dig!";
         target.style.display = "block";
         target.classList.add('text-danger');
+        target.classList.remove('text-success');
     }
 }
