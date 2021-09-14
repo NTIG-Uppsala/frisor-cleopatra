@@ -117,10 +117,12 @@ jobs:
 
       - name: Grab service short hair regular (Grep)
         run: grep "Kort hår stamkund" index.html
-
+      
+      - name: Grab map on site (Grep)
+        run: grep "Kort hår stamkund" index.html
 
       - name: Grab header for "hemkörning" (Grep)
-        run: grep "Hemkörning" index.html
+        run: grep "mymap" hitta-hit/index.html
         
         #Beacuse of the way the screenshot is taken we can nether set hover nor pointer atributes and therefor the easiest way to fix it is to just remove the element
       - name: HTML to Image desktop
@@ -131,6 +133,15 @@ jobs:
 
       - name: HTML to Image Pixel 2
         run: capture-website index.html --output=../views/MainPagePixel2.png --emulate-device="Pixel 2" --full-page --overwrite
+        
+      - name: HTML to Image desktop Hitta hit
+        run: capture-website hitta-hit/index.html --output=../views/Hitta-hitPage.png --full-page --overwrite --userAgent="Mozilla/5.0 (Windows NT 10.0; rv:91.0) Gecko/20100101 Firefox/91.0"
+        
+      - name: HTML to Image Iphone X Hitta hit
+        run: capture-website hitta-hit/index.html --output=../views/Hitta-hitPagePhoneX.png --emulate-device="iPhone X" --full-page --overwrite
+
+      - name: HTML to Image Pixel 2 Hitta hit
+        run: capture-website hitta-hit/index.html --output=../views/Hitta-hitPagePixel2.png --emulate-device="Pixel 2" --full-page --overwrite
 
       - name: Commit files that has been changed
         run: |
