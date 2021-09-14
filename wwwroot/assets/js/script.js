@@ -1,5 +1,8 @@
 $(function () {
     $(document).ready(function () {
+        $("#submitButton").css("display", "inline");
+        $("#inputPostalNumber").css("display", "inline");
+        $("#hiddenJS").css("display", "none");
         $(".nav").toggleClass("affix"); //Sets affix for nav class to make bar black
         if (matchMedia("(pointer:coarse)").matches) { // Check if device is using touch screen
             $(".navTrigger").css("display", "block"); // Show element .navTrigger
