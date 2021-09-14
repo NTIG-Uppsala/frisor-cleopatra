@@ -4,7 +4,15 @@ name: HTML Selenium
 
 # Controls when the workflow will run
 on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+    
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -24,10 +32,10 @@ jobs:
           python-version: 3.9
           # The target architecture (x86, x64) of the Python interpreter.
           architecture: x64
+          
       - name: Install deps
         run: git clone https://github.com/seleniumbase/SeleniumBase.git && cd SeleniumBase && pip install . && sbase install chromedriver latest
 
-        
       - name: Run Tests
-        run: python .github/tests/test.py
+        run: pytest .github/tests/test.py
         
