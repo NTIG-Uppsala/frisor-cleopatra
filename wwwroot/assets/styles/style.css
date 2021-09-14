@@ -328,6 +328,27 @@ ul.gallery li.gallery:hover {
     height: auto;
     vertical-align: text-bottom!important;
 }
+@media only screen and (max-width:1080px){
+    .logo img {
+        width: 40px;
+        height: auto;
+        vertical-align: text-bottom!important;
+    }
+}
+@media only screen and (max-width:750px){
+    .logo img {
+        width: 32px;
+        height: auto;
+        vertical-align: text-bottom!important;
+    }
+}
+@media only screen and (max-width:350px){
+    .logo img {
+        width: 24px;
+        height: auto;
+        vertical-align: text-bottom!important;
+    }
+}
 .nav {
     z-index:1000;
     width: 100%;
