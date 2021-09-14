@@ -221,7 +221,7 @@ span.image-text {
 #inputPostalNumber {
     max-width: 100px;
 }
-#inputSubmit {
+.inputSubmit {
     padding: 0px 15px;
     font-size: 1rem;
 }
