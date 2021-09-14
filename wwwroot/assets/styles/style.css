@@ -30,6 +30,11 @@ html::-webkit-scrollbar {
               user-select: none; /* Non-prefixed version, currently*/
   }
 
+  #mymap { 
+        width: auto;
+        height: 80vh;
+    }
+
 .anchor {
     display: block;
     position: relative;
@@ -350,7 +355,7 @@ ul.gallery li.gallery:hover {
     }
 }
 .nav {
-    z-index:1000;
+    z-index:10000;
     width: 100%;
     height: 65px;
     position: fixed;
