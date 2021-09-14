@@ -1,11 +1,11 @@
 from seleniumbase import BaseCase
 import os
 
-url = "file:" + os.path.abspath('../../wwwroot/index.html')
+#url = "file:" + os.path.abspath('../../wwwroot/index.html')
+url = "file:/home/runner/work/frisor-cleopatra/frisor-cleopatra/wwwroot/index.html"
 
 class tests(BaseCase):
     def test_start(self):
-        print(url)
         self.open(url)
 
 
