@@ -42,6 +42,6 @@ class tests(BaseCase):
         self.type("#inputPostalNumber", "98-142")
         # Verify that a button click changes text on the page
         self.click("#submitButton")
-        self.assert_text("Vi har hemkörning till dig!", "#postalNumberMessage")
+        self.assert_text("Du får bara använda siffror i fältet.", "#postalNumberMessage")
 
 
