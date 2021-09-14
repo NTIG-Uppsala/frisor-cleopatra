@@ -120,17 +120,17 @@ function checkPostalNumber(input){
     return false;
 }
 
-function getPostalNumberInput(testData){ 
+function getPostalNumberInput(){ 
     var PostalNumber = document.getElementById('inputPostalNumber').value;
     PostalNumber = PostalNumber.split(" ").join("");
-    if(!(testData === undefined)){
-        PostalNumber = testData;
-    }
+    let x = PostalNumber.length;
+    var PostalNumber =  PostalNumber.replace(/[^0-9.]/g, '');
     let target = document.getElementById('postalNumberMessage');
+    let y = PostalNumber.length;
     let isOnlyNumbers = true;
     /* some other fields */
     /* now call ur function by passing the above values */
-    if(isNaN(parseInt(PostalNumber))) {
+    if(x > y) {
         isOnlyNumbers = false;
     }
 

@@ -1,6 +1,5 @@
 from seleniumbase import BaseCase
 import os
-import inspect
 
 url = "file:" + os.path.abspath('../../wwwroot/index.html')
 
