@@ -5,6 +5,7 @@ url = "file:" + os.path.abspath('../../wwwroot/index.html')
 
 class tests(BaseCase):
     def test_start(self):
+        print(url)
         self.open(url)
 
 
