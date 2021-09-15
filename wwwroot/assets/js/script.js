@@ -3,7 +3,9 @@ $(function () {
         $("#submitButton").css("display", "inline");
         $("#inputPostalNumber").css("display", "inline");
         $("#hiddenJS").css("display", "none");
-        $(".nav").toggleClass("affix"); //Sets affix for nav class to make bar black
+        if (($(document).scrollTop() < 150)) { // If user has scrolled down toggle class affix
+            $(".nav").toggleClass("affix");
+        } //Sets affix for nav class to make bar black
         if (matchMedia("(pointer:coarse)").matches) { // Check if device is using touch screen
             $(".navTrigger").css("display", "block"); // Show element .navTrigger
         } else if (matchMedia("(max-width:590px)").matches) { // Check if device is using screen smaller then 590px in width
