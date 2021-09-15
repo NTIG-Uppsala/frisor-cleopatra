@@ -9,9 +9,12 @@
 
 ### <p align="center">Current website view Desktop</p>
 [<p align="center">MainPage View</p>](https://ntig-uppsala.github.io/frisor-cleopatra/views/MainPage.png)
+[<p align="center">FindHerePage View</p>](https://ntig-uppsala.github.io/frisor-cleopatra/views/Hitta-hitPage.png)
 ### <p align="center">Current website view Phone</p>
 [<p align="center">MainPage View Pixel 2 </p>](https://ntig-uppsala.github.io/frisor-cleopatra/views/MainPagePixel2.png)
+[<p align="center">FindHerePage View Pixel 2 </p>](https://ntig-uppsala.github.io/frisor-cleopatra/views/Hitta-hitPagePixel2.png)
 [<p align="center">MainPage View Iphone X </p>](https://ntig-uppsala.github.io/frisor-cleopatra/views/MainPagePhoneX.png)
+[<p align="center">FindHerePage View Iphone X </p>](https://ntig-uppsala.github.io/frisor-cleopatra/views/Hitta-hitPagePhoneX.png)
 ## <p align="center">Contributors</p>
 ### <p align="center">Product Owner</p>
  [<p align="center">@kasperda</p>](https://github.com/kasperda)
