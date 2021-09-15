@@ -94,6 +94,12 @@ p {
     border: 3px solid #ffffff;
     border-radius: 8px;
 }
+.body-frisorer {
+    min-height: 100%;
+}
+.frisor-section{
+    min-height: 77.5vh;
+}
 
 @media only screen and (max-width:750px){
     .button {
