@@ -23,10 +23,30 @@ html {
               user-select: none; /* Non-prefixed version, currently*/
   }
 
+  @media only screen and (min-width: 1400px) {
+    .maptext {
+        width: 400px;
+        float:left;
+    }
+}
+
+  .maptext {
+
+  }
+
   #mymap { 
         width: auto;
-        height: 50rem;
+        height: 30rem;
     }
+
+@media only screen and (min-width: 1400px) {
+    #mymap { 
+        width: 50rem;
+        height: 50rem;
+        float: left;
+    }
+
+}
 
 .anchor {
     display: block;
@@ -120,6 +140,10 @@ p {
     font-size: 40px;
 }
 
+.adress-text{
+    font-size: 15px;
+}
+
 .standard-text {
     font-size: 22px;
 }
@@ -137,7 +161,7 @@ p {
 }
 
 .bg-tint {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .bg-image{
