@@ -122,7 +122,7 @@ jobs:
         run: grep "Kort hår stamkund" index.html
 
       - name: Grab header for "hemkörning" (Grep)
-        run: grep "Hemkörning" index.html
+        run: grep "Hembesök" index.html
         
       - name: Grab header for "hemkörning" (Grep)
         run: grep "mymap" hitta-hit/index.html
