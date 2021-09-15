@@ -124,8 +124,17 @@ jobs:
       - name: Grab header for "hemkörning" (Grep)
         run: grep "Hembesök" index.html
         
-      - name: Grab header for "hemkörning" (Grep)
+      - name: Grab map div (Grep)
         run: grep "mymap" hitta-hit/index.html
+        
+      - name: Grab name "Fredrik" (Grep)
+        run: grep "Fredrik" vara-frisorer/index.html
+        
+      - name: Grab name "Örjan" (Grep)
+        run: grep "Örjan" vara-frisorer/index.html
+        
+      - name: Grab name "Anna" (Grep)
+        run: grep "Anna" vara-frisorer/index.html
         
         #Beacuse of the way the screenshot is taken we can nether set hover nor pointer atributes and therefor the easiest way to fix it is to just remove the element
       - name: HTML to Image desktop
@@ -145,6 +154,15 @@ jobs:
 
       - name: HTML to Image Pixel 2 Hitta hit
         run: capture-website hitta-hit/index.html --output=../views/Hitta-hitPagePixel2.png --emulate-device="Pixel 2" --full-page --overwrite
+        
+      - name: HTML to Image desktop Våra frisörer
+        run: capture-website vara-frisorer/index.html --output=../views/Vara-frisorerPage.png --full-page --overwrite --userAgent="Mozilla/5.0 (Windows NT 10.0; rv:91.0) Gecko/20100101 Firefox/91.0"
+        
+      - name: HTML to Image Iphone X Våra frisörer
+        run: capture-website vara-frisorer/index.html --output=../views/Vara-frisorerPagePhoneX.png --emulate-device="iPhone X" --full-page --overwrite
+
+      - name: HTML to Image Pixel 2 Våra frisörer
+        run: capture-website vara-frisorer/index.html --output=../views/Vara-frisorerPagePixel2.png --emulate-device="Pixel 2" --full-page --overwrite
 
       - name: Commit files that has been changed
         run: |
