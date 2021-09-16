@@ -124,6 +124,30 @@ jobs:
       - name: Grab header for "hemkörning" (Grep)
         run: grep "Hembesök" index.html
         
+      - name: Grab day Nyårsdagen (Grep)
+        run: grep "Nyårsdagen" hitta-hit/index.html
+        
+      - name: Grab day Trettondedag (Grep)
+        run: grep "Trettondedag" hitta-hit/index.html
+        
+      - name: Grab day Första maj (Grep)
+        run: grep "Första maj" hitta-hit/index.html
+        
+      - name: Grab day Sveriges nationaldag (Grep)
+        run: grep "Sveriges nationaldag" hitta-hit/index.html
+        
+      - name: Grab day Julafton (Grep)
+        run: grep "Julafton" hitta-hit/index.html
+        
+      - name: Grab day Juldagen (Grep)
+        run: grep "Juldagen" hitta-hit/index.html
+        
+      - name: Grab day Annandag jul (Grep)
+        run: grep "Annandag jul" hitta-hit/index.html
+        
+      - name: Grab day Nyårsafton (Grep)
+        run: grep "Nyårsafton" hitta-hit/index.html
+        
       - name: Grab map div (Grep)
         run: grep "mymap" hitta-hit/index.html
         
@@ -135,6 +159,7 @@ jobs:
         
       - name: Grab name "Anna" (Grep)
         run: grep "Anna" vara-frisorer/index.html
+        
         
         #Beacuse of the way the screenshot is taken we can nether set hover nor pointer atributes and therefor the easiest way to fix it is to just remove the element
       - name: HTML to Image desktop
