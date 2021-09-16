@@ -7,7 +7,7 @@ $(function () {
         $("#hideListDay").css("display", "none");
         $("#showListDate").css("display", "block");
         $("#showListDay").css("display", "block");
-        updateClosedDayList();
+        updateClosedDayList(todaysDate());
         if (($(document).scrollTop() < 150)) { // If user has scrolled down toggle class affix
             $(".nav").toggleClass("affix");
         } //Sets affix for nav class to make bar black
@@ -166,33 +166,49 @@ function getPostalNumberInput(){
 }
 
 
-function updateClosedDayList(){
-    dateList = [
-        { title: 'Nyårsdagen', date: new Date('2022-01-01') },
-        { title: 'Trettondedag', date: new Date('2022-01-06') },
-        { title: 'Första maj', date: new Date('2022-05-01') },
-        { title: 'Sveriges nationaldag', date: new Date('2022-06-06') },
-        { title: 'Julafton', date: new Date('2021-12-24') },
-        { title: 'Juldagen', date: new Date('2021-12-25') },
-        { title: 'Annandag jul', date: new Date('2021-12-26') },
-        { title: 'Nyårsafton', date: new Date('2021-12-31') }
-      ]
+function updateClosedDayList(today){
+    const dateList = [
+        { title: 'Nyårsdagen', month: 1, day: 1 },
+        { title: 'Trettondedag', month: 1, day: 6 },
+        { title: 'Första maj', month: 5, day: 1  },
+        { title: 'Sveriges nationaldag', month: 6, day: 6 },
+        { title: 'Julafton', month: 12, day: 24 },
+        { title: 'Juldagen', month: 12, day: 25 },
+        { title: 'Annandag jul', month: 12, day: 26 },
+        { title: 'Nyårsafton', month: 12, day: 31 }
+      ];
 
-    var today = new Date();
-    for(var i = 0; i < 8; i++){
-        const closest = dateList.reduce(function (a, b) { // a och b är tagna ur dateList efter reduce modellen. Dessa är i detta fall ett index av dateList 
-            const adiff = a.date - today;
-            const bdiff = b.date - today;
-            if(adiff > 0 && adiff < bdiff){
-                return a;
+      var currentMonth = parseInt(today.getMonth() + 1);
+      var currentDay = parseInt(today.getDate());
+
+      let futureDates = [];
+      let pastDates = [];
+      for(let i = 0; i < dateList.length; i++){
+            if((dateList[i].month <= currentMonth)){
+                if(dateList[i].day >= currentDay && dateList[i].month == currentMonth){
+                    futureDates.push(dateList[i]);
+                }
+                else {
+                    pastDates.push(dateList[i]);
+                }
             }
-            return b;
-        });
-        today = closest.date;
-        const options = { month: 'long', day: '2-digit' };
-        const dateStr = new Intl.DateTimeFormat('sv-SE', options).format;
-        dateList.splice(dateList.indexOf(closest), 1);
-        $("#dayLi" + (i + 1)).text(closest.title);
-        $("#dateLi" + (i + 1)).text(dateStr(today));
+            else {
+                futureDates.push(dateList[i]);
+            }
+      }
+    dateArr = [];
+    dateArr.push.apply(dateArr, futureDates);
+    dateArr.push.apply(dateArr, pastDates);
+
+    for(let x = 0; x < dateArr.length; x++){
+        $("#dayLi" + (x + 1)).text(dateArr[x].title);
+        $("#dateLi" + (x + 1)).text(dateArr[x].day + "/" + dateArr[x].day); 
     }
+    
+}
+
+function todaysDate(){
+    var date = new Date();
+    console.log(date);
+    return date;
 }
