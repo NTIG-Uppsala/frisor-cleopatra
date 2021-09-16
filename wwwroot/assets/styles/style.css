@@ -34,6 +34,10 @@ html {
 
   }
 
+  .capitalize {
+    text-transform: capitalize;
+  }
+
   #mymap { 
         width: auto;
         height: 30rem;
@@ -135,6 +139,13 @@ p {
         border: 3px solid #ffffff;
         border-radius: 8px;
     }
+}
+
+#showListDay{
+    display: none;
+}
+#showListDate{
+    display: none;
 }
 
 .button:hover {

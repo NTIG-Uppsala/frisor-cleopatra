@@ -4,7 +4,7 @@ import os
 #url = "file:" + os.path.abspath('../../wwwroot/index.html')
 url = "file:/home/runner/work/frisor-cleopatra/frisor-cleopatra/wwwroot/index.html"
 
-class tests(BaseCase):
+class testPostnummer(BaseCase):
     def test_start(self):
         self.open(url)
 
@@ -45,4 +45,9 @@ class tests(BaseCase):
         self.click("#submitButton")
         self.assert_text("Du får bara använda siffror i fältet.", "#postalNumberMessage")
 
+class testStangdaDagLista(BaseCase):
+    def test_start(self):
+        self.open(url)
 
+        self.execute_script("_Date = Date; Date = function() {return new _Date('Fri Sep 17 2021 00:00:00 GMT+0000 (UTC)')}; updateClosedDayList();")
+        self.assert_text("Julafton", "#dayLi1")

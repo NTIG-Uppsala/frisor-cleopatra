@@ -3,6 +3,11 @@ $(function () {
         $("#submitButton").css("display", "inline");
         $("#inputPostalNumber").css("display", "inline");
         $("#hiddenJS").css("display", "none");
+        $("#hideListDate").css("display", "none");
+        $("#hideListDay").css("display", "none");
+        $("#showListDate").css("display", "block");
+        $("#showListDay").css("display", "block");
+        updateClosedDayList();
         if (($(document).scrollTop() < 150)) { // If user has scrolled down toggle class affix
             $(".nav").toggleClass("affix");
         } //Sets affix for nav class to make bar black
@@ -12,6 +17,7 @@ $(function () {
             $(".navTrigger").css("display", "block"); // Show element .navTrigger
         }
     });
+
 
     /* 
     Element: Window
@@ -157,4 +163,36 @@ function getPostalNumberInput(){
         target.classList.remove('text-success');
     }
     return isPossible;
+}
+
+
+function updateClosedDayList(){
+    dateList = [
+        { title: 'Nyårsdagen', date: new Date('2022-01-01') },
+        { title: 'Trettondedag', date: new Date('2022-01-06') },
+        { title: 'Första maj', date: new Date('2022-05-01') },
+        { title: 'Sveriges nationaldag', date: new Date('2022-06-06') },
+        { title: 'Julafton', date: new Date('2021-12-24') },
+        { title: 'Juldagen', date: new Date('2021-12-25') },
+        { title: 'Annandag jul', date: new Date('2021-12-26') },
+        { title: 'Nyårsafton', date: new Date('2021-12-31') }
+      ]
+
+    var today = new Date();
+    for(var i = 0; i < 8; i++){
+        const closest = dateList.reduce(function (a, b) { // a och b är tagna ur dateList efter reduce modellen. Dessa är i detta fall ett index av dateList 
+            const adiff = a.date - today;
+            const bdiff = b.date - today;
+            if(adiff > 0 && adiff < bdiff){
+                return a;
+            }
+            return b;
+        });
+        today = closest.date;
+        const options = { month: 'long', day: '2-digit' };
+        const dateStr = new Intl.DateTimeFormat('sv-SE', options).format;
+        dateList.splice(dateList.indexOf(closest), 1);
+        $("#dayLi" + (i + 1)).text(closest.title);
+        $("#dateLi" + (i + 1)).text(dateStr(today));
+    }
 }
