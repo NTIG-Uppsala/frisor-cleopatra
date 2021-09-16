@@ -3,6 +3,7 @@ import os
 
 #url = "file:" + os.path.abspath('../../wwwroot/index.html')
 url = "file:/home/runner/work/frisor-cleopatra/frisor-cleopatra/wwwroot/index.html"
+url2 = "file:/home/runner/work/frisor-cleopatra/frisor-cleopatra/wwwroot/hitta-hit/index.html"
 
 class testPostnummer(BaseCase):
     def test_start(self):
@@ -46,8 +47,8 @@ class testPostnummer(BaseCase):
         self.assert_text("Du får bara använda siffror i fältet.", "#postalNumberMessage")
 
 class testStangdaDagLista(BaseCase):
-    def test_start(self):
-        self.open(url)
+    def test_start2(self):
+        self.open(url2)
 
         self.execute_script("updateClosedDayList(new Date(Date.UTC(2012, 11, 25, 3, 0, 0, 200)))")
         self.assert_text("Juldagen", "#dayLi1")
