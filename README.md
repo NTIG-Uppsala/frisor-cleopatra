@@ -1,17 +1,17 @@
 # <p align="center">Frisör Cleopatra</p>
 ## <p align="center">Table of contents</p>
 [<p align="center">General Info</p>](#general-info)
-[<p align="center">Current website view</p>](#current-website-view)
+[<p align="center">Current website view Desktop</p>](#Current-website-view-Desktop)
+[<p align="center">Current website view Mobile</p>](#Current-website-view-Phone)
 [<p align="center">Contributors</p>](#contributors)
+[<p align="center">Documents</p>](#Documents)
 
 ## <p align="center">General info</p>
 <p align="center">A static website for a client. Its focused on working well on phones and without javascript</p>
 
 ### <p align="center">Current website view Desktop</p>
 [<p align="center">MainPage View</p>](https://ntig-uppsala.github.io/frisor-cleopatra/views/MainPage.png)
-<br>
 [<p align="center">FindUsPage View</p>](https://ntig-uppsala.github.io/frisor-cleopatra/views/Hitta-hitPage.png)
-<br>
 [<p align="center">StaffPage View</p>](https://ntig-uppsala.github.io/frisor-cleopatra/views/Vara-frisorerPage.png)
 ### <p align="center">Current website view Phone</p>
 [<p align="center">MainPage View Pixel 2 </p>](https://ntig-uppsala.github.io/frisor-cleopatra/views/MainPagePixel2.png)

@@ -7,7 +7,7 @@ $(function () {
         $("#hideListDay").css("display", "none");
         $("#showListDate").css("display", "block");
         $("#showListDay").css("display", "block");
-        updateClosedDayList(todaysDate());
+        updateClosedDayList(todaysDate());  //Calls List logic function with todaysdate
         if (($(document).scrollTop() < 150)) { // If user has scrolled down toggle class affix
             $(".nav").toggleClass("affix");
         } //Sets affix for nav class to make bar black
@@ -22,7 +22,7 @@ $(function () {
     /* 
     Element: Window
     Usage: Checks if window is resized then sets navTrigger accordingly.
-    Deps: None
+    Deps: JQuery
     Return: None    
     */
 
@@ -40,7 +40,7 @@ $(function () {
     /* 
     Element: navTrigger
     Usage: Checks if element is clicked then toggles active class.
-    Deps: None
+    Deps: JQuery
     Return: None    
     */
     $(".navTrigger").click(function () {
@@ -65,7 +65,7 @@ $(function () {
     /* 
     Element: navLink
     Usage: Logic for clicking a link in mobile menu.
-    Deps: None
+    Deps: JQuery
     Return: None    
     */
     $(".navLink").click(function () {
@@ -80,7 +80,7 @@ $(function () {
     /* 
     Element: Window
     Usage: Sets nav to black if user scrolls page.
-    Deps: None
+    Deps: JQuery
     Return: None    
     */
     $(window).scroll(function () {
@@ -120,6 +120,13 @@ $(function () {
     }
 });
 
+/* 
+Element: None
+Usage: Checks user input if PostalNumber is correct. Returns true if value exist.
+Deps: None
+Return: Boolean    
+*/
+
 function checkPostalNumber(input){
     let validNumbers = [98139, 98140, 98142, 98138];
         for(let i = 0; i < validNumbers.length;){
@@ -131,6 +138,13 @@ function checkPostalNumber(input){
     return false;
 }
 
+/* 
+Element: None
+Usage: Logic for PostalNumber check and text viewing. Gets input from input element with id inputPostalNumber.
+Deps: None
+Return: Boolean    
+*/
+
 function getPostalNumberInput(){ 
     var PostalNumber = document.getElementById('inputPostalNumber').value;
     PostalNumber = PostalNumber.split(" ").join("");
@@ -139,8 +153,6 @@ function getPostalNumberInput(){
     let target = document.getElementById('postalNumberMessage');
     let y = PostalNumber.length;
     let isOnlyNumbers = true;
-    /* some other fields */
-    /* now call ur function by passing the above values */
     if(x > y) {
         isOnlyNumbers = false;
     }
@@ -165,6 +177,12 @@ function getPostalNumberInput(){
     return isPossible;
 }
 
+/* 
+Element: None
+Usage: Checks current day to list next closed days. It loops the resulting array to view days for user.
+Deps: None
+Return: None    
+*/
 
 function updateClosedDayList(today){
     const dateList = [
@@ -202,10 +220,17 @@ function updateClosedDayList(today){
 
     for(let x = 0; x < dateArr.length; x++){
         $("#dayLi" + (x + 1)).text(dateArr[x].title);
-        $("#dateLi" + (x + 1)).text(dateArr[x].day + "/" + dateArr[x].day); 
+        $("#dateLi" + (x + 1)).text(dateArr[x].day + "/" + dateArr[x].month); 
     }
     
 }
+
+/* 
+Element: None
+Usage: Gets current day in a date object.
+Deps: None
+Return: Date()   
+*/
 
 function todaysDate(){
     var date = new Date();
