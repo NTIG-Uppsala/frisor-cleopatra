@@ -10,7 +10,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 var marker = L.marker([67.86605519070237, 20.234020511130602]).addTo(map);
 marker.bindPopup("<b>Frisör Cleopatra</b><br>Fjällgatan 32H, 981 39 Kiruna").openPopup();
 
-L.map('map', {
+L.map('mymap', {
     dragging: !L.Browser.mobile,
     tap: !L.Browser.mobile
 })
