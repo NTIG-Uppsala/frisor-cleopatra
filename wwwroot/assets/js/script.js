@@ -234,6 +234,5 @@ Return: Date()
 
 function todaysDate(){
     var date = new Date();
-    console.log(date);
     return date;
 }
