@@ -171,6 +171,12 @@ p {
     list-style: none;
 }
 
+.logo2-header-font {
+    font-family: 'Cuprum';
+    text-decoration: none;
+    list-style: none;
+}
+
 .centerMain {
     background: white;
     padding: 5%;
@@ -347,6 +353,8 @@ ul.gallery li.gallery:hover {
        }
    }
 }
+
+
 .responsive {
     max-width: 100%;
     max-height: 100%;
@@ -366,6 +374,12 @@ ul.gallery li.gallery:hover {
     width: 48px;
     height: auto;
     vertical-align: text-bottom!important;
+}
+
+.logo2 {
+    position: absolute;
+    left: 10px;
+    top: 10px;
 }
 @media only screen and (max-width:1080px){
     .logo img {
@@ -388,6 +402,7 @@ ul.gallery li.gallery:hover {
         vertical-align: text-bottom!important;
     }
 }
+
 .nav {
     z-index:10000;
     width: 100%;
@@ -429,6 +444,7 @@ ul.gallery li.gallery:hover {
         font-size: 1rem;
     }
 }
+
 @media only screen and (max-width:1080px){
     .subtitle {
         text-decoration: none;
