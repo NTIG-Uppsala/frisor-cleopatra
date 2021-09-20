@@ -196,7 +196,7 @@ function updateClosedDayList(today){
         { title: 'Nyårsafton', month: 12, day: 31 }
       ];
 
-      var currentMonth = parseInt(today.getMonth() + 1);
+      var currentMonth = parseInt(today.getMonth() + 1); //get month returns a value between 0 and 11. setting +1 gets the real month number.
       var currentDay = parseInt(today.getDate());
 
       let futureDates = [];
