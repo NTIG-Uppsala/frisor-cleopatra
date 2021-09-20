@@ -22,7 +22,7 @@
 [<p align="center">StaffPage View Iphone X </p>](https://ntig-uppsala.github.io/frisor-cleopatra/views/Vara-frisorerPagePhoneX.png)
 ## <p align="center">Contributors</p>
 ### <p align="center">Product Owner</p>
- [<p align="center">@kasperda</p>](https://github.com/kasperda)
+ [<p align="center">@johan-mattias</p>](https://github.com/johan-mattias)
 
 ### <p align="center">Developers</p>
 [<p align="center">@liljekvist</p>](https://github.com/liljekvist)
