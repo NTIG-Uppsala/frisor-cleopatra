@@ -8,7 +8,7 @@ $(function () {
         $("#showListDate").css("display", "block");
         $("#showListDay").css("display", "block");
         updateClosedDayList(todaysDate());  //Calls List logic function with todaysdate
-        if (($(document).scrollTop() < 150)) { // If user has scrolled down toggle class affix
+        if (($(document).scrollTop() < 10)) { // If user has scrolled down toggle class affix
             $(".nav").toggleClass("affix");
         } //Sets affix for nav class to make bar black
         if (matchMedia("(pointer:coarse)").matches) { // Check if device is using touch screen
@@ -45,7 +45,7 @@ $(function () {
     */
     $(".navTrigger").click(function () {
         $(this).toggleClass("active");
-        if ($(document).scrollTop() < 150) { // If user has scrolled down toggle class affix
+        if ($(document).scrollTop() < 10) { // If user has scrolled down toggle class affix
             $(".nav").toggleClass("affix");
         }
 
@@ -85,7 +85,7 @@ $(function () {
     */
     $(window).scroll(function () {
         if (disableScroll) {
-        } else if ($(document).scrollTop() > 150) { // Checks current position of page
+        } else if ($(document).scrollTop() > 10) { // Checks current position of page
             $(".nav").addClass("affix");
         } else {
             $(".nav").removeClass("affix");
