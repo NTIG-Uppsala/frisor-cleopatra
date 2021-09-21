@@ -8,7 +8,7 @@ $(function () {
         $("#showListDate").css("display", "block");
         $("#showListDay").css("display", "block");
         updateClosedDayList(todaysDate());  //Calls List logic function with todaysdate
-        if (($(document).scrollTop() < 150)) { // If user has scrolled down toggle class affix
+        if (($(document).scrollTop() < 10)) { // If user has scrolled down toggle class affix
             $(".nav").toggleClass("affix");
         } //Sets affix for nav class to make bar black
         if (matchMedia("(pointer:coarse)").matches) { // Check if device is using touch screen
@@ -45,7 +45,7 @@ $(function () {
     */
     $(".navTrigger").click(function () {
         $(this).toggleClass("active");
-        if ($(document).scrollTop() < 150) { // If user has scrolled down toggle class affix
+        if ($(document).scrollTop() < 10) { // If user has scrolled down toggle class affix
             $(".nav").toggleClass("affix");
         }
 
@@ -85,7 +85,7 @@ $(function () {
     */
     $(window).scroll(function () {
         if (disableScroll) {
-        } else if ($(document).scrollTop() > 150) { // Checks current position of page
+        } else if ($(document).scrollTop() > 10) { // Checks current position of page
             $(".nav").addClass("affix");
         } else {
             $(".nav").removeClass("affix");
@@ -129,13 +129,19 @@ Return: Boolean
 
 function checkPostalNumber(input){
     let validNumbers = [98139, 98140, 98142, 98138];
-        for(let i = 0; i < validNumbers.length;){
+        for(let i = 0; i < validNumbers.length;i++){
             if (validNumbers[i] == input){
                 return true;
             }
-            i++;
         }
     return false;
+}
+
+
+document.onkeydown=function(){
+    if(window.event.keyCode=='13'){
+        getPostalNumberInput();
+    }
 }
 
 /* 
@@ -157,8 +163,8 @@ function getPostalNumberInput(){
         isOnlyNumbers = false;
     }
 
-    let isPossible = checkPostalNumber(parseInt(PostalNumber));
-    if(isPossible && isOnlyNumbers){
+    let IsValid = checkPostalNumber(parseInt(PostalNumber));
+    if(IsValid && isOnlyNumbers){
         target.innerHTML = "Vi har hembesök till dig!";
         target.style.display = "block";
         target.classList.add('text-success');
@@ -174,7 +180,7 @@ function getPostalNumberInput(){
         target.classList.add('text-danger');
         target.classList.remove('text-success');
     }
-    return isPossible;
+    return IsValid; //Returns bool to onclick call to make sure its successful
 }
 
 /* 
