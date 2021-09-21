@@ -12,12 +12,23 @@ html {
 
 .bg-darker{
     --bs-bg-opacity: 1;
+<<<<<<< HEAD
     background-color: #161616!important;
 }
 
 .bg-dark {
     background-color: #212529!important
+=======
+    background-color: #161616 !important;
+    filter: none!important;
+>>>>>>> dc054c8a9c873831aa78c25f0e87fbbd6d1e2cb0
 }
+.bg-dark{
+    --bs-bg-opacity: 1;
+    background-color: #212529 !important;
+    filter: none!important;
+}
+
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
       -webkit-user-select: none; /* Safari */
@@ -189,7 +200,6 @@ p {
 
 .bg-image{
     background-image: url("../images/bakgrund.jpg");
-    background-blend-mode: overlay;
     background-repeat: no-repeat!important;
     background-position: center!important;
     background-size: cover!important;
@@ -207,7 +217,6 @@ p {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    
 }
 
 .bg-image::before {
@@ -338,9 +347,9 @@ ul.gallery li.gallery:hover {
    }
 }
 /* Makes the image alternative for smaller devices hidden on larger devices */
-@media only screen{
-    @media only screen and (hover: hover){
-        @media only screen and (max-width:999px){
+@media screen{
+    @media screen and (hover: hover){
+        @media screen and (max-width:999px){
             .hidden-mobile {
                 display: none;
            }
@@ -380,21 +389,21 @@ ul.gallery li.gallery:hover {
     left: 10px;
     top: 10px;
 }
-@media only screen and (max-width:1080px){
+@media screen and (max-width:1080px){
     .logo img {
         width: 40px;
         height: auto;
         vertical-align: text-bottom!important;
     }
 }
-@media only screen and (max-width:750px){
+@media screen and (max-width:750px){
     .logo img {
         width: 32px;
         height: auto;
         vertical-align: text-bottom!important;
     }
 }
-@media only screen and (max-width:350px){
+@media screen and (max-width:350px){
     .logo img {
         width: 24px;
         height: auto;
@@ -420,7 +429,7 @@ ul.gallery li.gallery:hover {
     color: #fff;
     font-size: 2.5rem;
 }
-@media only screen and (max-width:1080px){
+@media screen and (max-width:1080px){
     .nav div.logo a {
         text-decoration: none;
         color: #fff;
@@ -428,7 +437,7 @@ ul.gallery li.gallery:hover {
     }
 }
 
-@media only screen and (max-width:750px){
+@media screen and (max-width:750px){
     .nav div.logo a {
         text-decoration: none;
         color: #fff;
@@ -436,7 +445,7 @@ ul.gallery li.gallery:hover {
     }
 }
 
-@media only screen and (max-width:350px){
+@media screen and (max-width:350px){
     .nav div.logo a {
         text-decoration: none;
         color: #fff;
@@ -444,7 +453,7 @@ ul.gallery li.gallery:hover {
     }
 }
 
-@media only screen and (max-width:1080px){
+@media screen and (max-width:1080px){
     .subtitle {
         text-decoration: none;
         color: #fff;
@@ -452,7 +461,7 @@ ul.gallery li.gallery:hover {
     }
 }
 
-@media only screen and (max-width:750px){
+@media screen and (max-width:750px){
     .subtitle {
         text-decoration: none;
         color: #fff;
@@ -460,7 +469,7 @@ ul.gallery li.gallery:hover {
     }
 }
 
-@media only screen and (max-width:350px){
+@media screen and (max-width:350px){
     .subtitle {
         text-decoration: none;
         color: #fff;
@@ -468,7 +477,7 @@ ul.gallery li.gallery:hover {
     }
 }
 
-@media only screen and (max-width:1080px){
+@media screen and (max-width:1080px){
     .main-section-app {
         text-decoration: none;
         color: #fff;
@@ -476,7 +485,7 @@ ul.gallery li.gallery:hover {
     }
 }
 
-@media only screen and (max-width:750px){
+@media screen and (max-width:750px){
     .main-section-app {
         text-decoration: none;
         color: #fff;
@@ -484,7 +493,7 @@ ul.gallery li.gallery:hover {
     }
 }
 
-@media only screen and (max-width:350px){
+@media screen and (max-width:350px){
     .main-section-app {
         text-decoration: none;
         color: #fff;
@@ -492,7 +501,7 @@ ul.gallery li.gallery:hover {
     }
 }
 
-@media only screen and (max-width:600px){
+@media screen and (max-width:600px){
     .standard-text {
         text-decoration: none;
         color: #fff;
@@ -500,7 +509,7 @@ ul.gallery li.gallery:hover {
     }
 }
 
-@media only screen and (max-width:450px){
+@media screen and (max-width:450px){
     .standard-text {
         text-decoration: none;
         color: #fff;
@@ -508,7 +517,7 @@ ul.gallery li.gallery:hover {
     }
 }
 
-@media only screen and (max-width:350px){
+@media screen and (max-width:350px){
     .standard-text {
         text-decoration: none;
         color: #fff;
@@ -516,7 +525,7 @@ ul.gallery li.gallery:hover {
     }
 }
 
-@media only screen and (max-width:280px){
+@media screen and (max-width:280px){
     .standard-text {
         text-decoration: none;
         color: #fff;
@@ -587,7 +596,7 @@ ul.gallery li.gallery:hover {
         margin: 0;
    }
 }
-@media only screen and (hover: none) and (pointer: coarse) {
+@media screen and (hover: none) and (pointer: coarse) {
     @-webkit-keyframes fadeIn {
         0% {
            opacity: 0;
@@ -656,7 +665,7 @@ ul.gallery li.gallery:hover {
         display: block;
    }
 }
-@media only screen and (max-width:590px){
+@media screen and (max-width:590px){
     @-webkit-keyframes fadeIn {
         0% {
            opacity: 0;
