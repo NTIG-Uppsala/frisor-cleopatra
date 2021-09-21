@@ -12,16 +12,8 @@ html {
 
 .bg-darker{
     --bs-bg-opacity: 1;
-<<<<<<< HEAD
-    background-color: #161616!important;
-}
-
-.bg-dark {
-    background-color: #212529!important
-=======
     background-color: #161616 !important;
     filter: none!important;
->>>>>>> dc054c8a9c873831aa78c25f0e87fbbd6d1e2cb0
 }
 .bg-dark{
     --bs-bg-opacity: 1;
@@ -44,6 +36,19 @@ html {
         float:left;
     }
 }
+    /*IE*/
+    @media screen and (min-width:1400px), screen\0 {
+        .maptext {
+            width: 400px;
+            float:left;
+        }
+    }
+    @media screen and (min-width:1400px), screen\9 {
+        .maptext {
+            width: 400px;
+            float:left;
+        }
+    }
 
   .capitalize {
     text-transform: capitalize;
@@ -62,6 +67,25 @@ html {
     }
 
 }
+
+@media screen and (min-width: 1400px), screen\0 {
+    #map { 
+        width: 50rem;
+        height: 50rem;
+        float: left;
+    }
+
+}
+
+@media screen and (min-width: 1400px), screen\9 {
+    #map { 
+        width: 50rem;
+        height: 50rem;
+        float: left;
+    }
+
+}
+
 
 .anchor {
     display: block;
@@ -134,7 +158,79 @@ p {
     }
 }
 
+@media screen and (max-width:750px), screen\0{
+    .button {
+        border: none;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 22px;
+        margin: 4px 2px;
+        transition-duration: 0.1s;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.0);
+        color: white;
+        border: 3px solid #ffffff;
+        border-radius: 8px;
+    }
+}
+
+
+@media screen and (max-width:750px), screen\9{
+    .button {
+        border: none;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 22px;
+        margin: 4px 2px;
+        transition-duration: 0.1s;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.0);
+        color: white;
+        border: 3px solid #ffffff;
+        border-radius: 8px;
+    }
+}
+
+
 @media only screen and (max-width:350px){
+    .button {
+        border: none;
+        padding: 4px 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 22px;
+        margin: 4px 2px;
+        transition-duration: 0.1s;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.0);
+        color: white;
+        border: 3px solid #ffffff;
+        border-radius: 8px;
+    }
+}
+@media screen and (max-width:350px), screen\0{
+    .button {
+        border: none;
+        padding: 4px 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 22px;
+        margin: 4px 2px;
+        transition-duration: 0.1s;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.0);
+        color: white;
+        border: 3px solid #ffffff;
+        border-radius: 8px;
+    }
+}
+@media screen and (max-width:350px), screen\9{
     .button {
         border: none;
         padding: 4px 8px;
@@ -346,6 +442,18 @@ ul.gallery li.gallery:hover {
         display: none;
    }
 }
+
+@media screen\0 {
+    .hidden-mobile {
+        display: none;
+   }
+}
+@media screen\9 {
+    .hidden-mobile {
+        display: none;
+   }
+}
+
 /* Makes the image alternative for smaller devices hidden on larger devices */
 @media screen{
     @media screen and (hover: hover){
@@ -396,6 +504,20 @@ ul.gallery li.gallery:hover {
         vertical-align: text-bottom!important;
     }
 }
+@media screen and (max-width:1080px), screen\0{
+    .logo img {
+        width: 40px;
+        height: auto;
+        vertical-align: text-bottom!important;
+    }
+}
+@media screen and (max-width:1080px), screen\9{
+    .logo img {
+        width: 40px;
+        height: auto;
+        vertical-align: text-bottom!important;
+    }
+}
 @media screen and (max-width:750px){
     .logo img {
         width: 32px;
@@ -403,7 +525,35 @@ ul.gallery li.gallery:hover {
         vertical-align: text-bottom!important;
     }
 }
+@media screen and (max-width:750px), screen\0{
+    .logo img {
+        width: 32px;
+        height: auto;
+        vertical-align: text-bottom!important;
+    }
+}
+@media screen and (max-width:750px), screen\9{
+    .logo img {
+        width: 32px;
+        height: auto;
+        vertical-align: text-bottom!important;
+    }
+}
 @media screen and (max-width:350px){
+    .logo img {
+        width: 24px;
+        height: auto;
+        vertical-align: text-bottom!important;
+    }
+}
+@media screen and (max-width:350px), screen\0{
+    .logo img {
+        width: 24px;
+        height: auto;
+        vertical-align: text-bottom!important;
+    }
+}
+@media screen and (max-width:350px), screen\9{
     .logo img {
         width: 24px;
         height: auto;
@@ -437,6 +587,23 @@ ul.gallery li.gallery:hover {
     }
 }
 
+@media screen and (max-width:1080px),screen\0{
+    .nav div.logo a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 2rem;
+    }
+}
+
+
+@media screen and (max-width:1080px),screen\9{
+    .nav div.logo a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 2rem;
+    }
+}
+
 @media screen and (max-width:750px){
     .nav div.logo a {
         text-decoration: none;
@@ -445,7 +612,39 @@ ul.gallery li.gallery:hover {
     }
 }
 
+@media screen and (max-width:750px), screen\0{
+    .nav div.logo a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+}
+@media screen and (max-width:750px), screen\9{
+    .nav div.logo a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+}
+
+
 @media screen and (max-width:350px){
+    .nav div.logo a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:350px),screen\0{
+    .nav div.logo a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:350px),screen\9{
     .nav div.logo a {
         text-decoration: none;
         color: #fff;
@@ -461,7 +660,39 @@ ul.gallery li.gallery:hover {
     }
 }
 
+@media screen and (max-width:1080px), screen\0{
+    .subtitle {
+        text-decoration: none;
+        color: #fff;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:1080px), screen\9{
+    .subtitle {
+        text-decoration: none;
+        color: #fff;
+        font-size: 2rem;
+    }
+}
+
 @media screen and (max-width:750px){
+    .subtitle {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width:750px), screen\0{
+    .subtitle {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width:750px), screen\9{
     .subtitle {
         text-decoration: none;
         color: #fff;
@@ -477,7 +708,41 @@ ul.gallery li.gallery:hover {
     }
 }
 
+@media screen and (max-width:350px), screen\0{
+    .subtitle {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width:350px), screen\9{
+    .subtitle {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.4rem;
+    }
+}
+
+
+
 @media screen and (max-width:1080px){
+    .main-section-app {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:1080px), screen\0{
+    .main-section-app {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:1080px), screen\9{
     .main-section-app {
         text-decoration: none;
         color: #fff;
@@ -493,7 +758,39 @@ ul.gallery li.gallery:hover {
     }
 }
 
+@media screen and (max-width:750px), screen\0{
+    .main-section-app {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:750px), screen\9{
+    .main-section-app {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+    }
+}
+
 @media screen and (max-width:350px){
+    .main-section-app {
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width:350px), screen\0{
+    .main-section-app {
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width:350px), screen\9{
     .main-section-app {
         text-decoration: none;
         color: #fff;
@@ -509,6 +806,22 @@ ul.gallery li.gallery:hover {
     }
 }
 
+@media screen and (max-width:600px),screen\0{
+    .standard-text {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:600px),screen\9{
+    .standard-text {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+    }
+}
+
 @media screen and (max-width:450px){
     .standard-text {
         text-decoration: none;
@@ -516,6 +829,23 @@ ul.gallery li.gallery:hover {
         font-size: 1rem;
     }
 }
+
+@media screen and (max-width:450px), screen\0{
+    .standard-text {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:450px), screen\9{
+    .standard-text {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+    }
+}
+
 
 @media screen and (max-width:350px){
     .standard-text {
@@ -525,7 +855,39 @@ ul.gallery li.gallery:hover {
     }
 }
 
+@media screen and (max-width:350px), screen\0{
+    .standard-text {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:350px), screen\9{
+    .standard-text {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+    }
+}
+
 @media screen and (max-width:280px){
+    .standard-text {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:280px), screen\0{
+    .standard-text {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:280px), screen\9{
     .standard-text {
         text-decoration: none;
         color: #fff;
@@ -569,7 +931,43 @@ ul.gallery li.gallery:hover {
         font-size: 1.7rem;
    }
 }
+
+@media (max-width:751px), screen\0 {
+    .nav div.main_list ul li a {
+        text-decoration: none;
+        color: #fff;
+        line-height: 65px;
+        font-size: 1.7rem;
+   }
+}
+
+@media (max-width:751px), screen\9 {
+    .nav div.main_list ul li a {
+        text-decoration: none;
+        color: #fff;
+        line-height: 65px;
+        font-size: 1.7rem;
+   }
+}
 @media (max-width:690px){
+    .nav div.main_list ul li a {
+        text-decoration: none;
+        color: #fff;
+        line-height: 65px;
+        font-size: 1.2rem;
+   }
+}
+
+@media (max-width:690px), screen\0{
+    .nav div.main_list ul li a {
+        text-decoration: none;
+        color: #fff;
+        line-height: 65px;
+        font-size: 1.2rem;
+   }
+}
+
+@media (max-width:690px), screen\9{
     .nav div.main_list ul li a {
         text-decoration: none;
         color: #fff;
@@ -592,6 +990,18 @@ ul.gallery li.gallery:hover {
 }
 /* Media query section */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        margin: 0;
+   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px), screen\0 {
+    .container {
+        margin: 0;
+   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px), screen\9 {
     .container {
         margin: 0;
    }
