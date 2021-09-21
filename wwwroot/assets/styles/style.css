@@ -12,7 +12,11 @@ html {
 
 .bg-darker{
     --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-darker-rgb), var(--bs-bg-opacity)) !important;
+    background-color: #161616!important;
+}
+
+.bg-dark {
+    background-color: #212529!important
 }
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
@@ -29,10 +33,6 @@ html {
         float:left;
     }
 }
-
-  .maptext {
-
-  }
 
   .capitalize {
     text-transform: capitalize;
