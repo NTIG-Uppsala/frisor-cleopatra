@@ -5,6 +5,7 @@ function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 67.86605519070237, lng: 20.234020511130602 },
     zoom: 15,
+    gestureHandling: "cooperative",
   });
   const contentString =
     '<div id="content" class="text-dark">' +
