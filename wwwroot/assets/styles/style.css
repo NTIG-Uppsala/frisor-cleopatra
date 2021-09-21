@@ -38,13 +38,13 @@ html {
     text-transform: capitalize;
   }
 
-  #mymap { 
+  #map { 
         width: auto;
         height: 30rem;
     }
 
 @media only screen and (min-width: 1400px) {
-    #mymap { 
+    #map { 
         width: 50rem;
         height: 50rem;
         float: left;
