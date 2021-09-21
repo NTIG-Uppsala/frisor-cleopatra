@@ -188,7 +188,7 @@ p {
 }
 
 .bg-image{
-    background-image: url("../images/bild1.jpg");
+    background-image: url("../images/bakgrund.jpg");
     background-blend-mode: overlay;
     background-repeat: no-repeat!important;
     background-position: center!important;
@@ -215,7 +215,6 @@ p {
     position: absolute;
     width: 100%;
     height: 100vh;
-    backdrop-filter: blur(3px);
 }
 
 .main-text {
