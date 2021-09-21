@@ -15,13 +15,13 @@ class testPostnummer(BaseCase):
         self.type("#inputPostalNumber", "98139")
         # Verify that a button click changes text on the page
         self.click("#submitButton")
-        self.assert_text("Vi har hemkörning till dig!", "#postalNumberMessage")
+        self.assert_text("Vi har hembesök till dig!", "#postalNumberMessage")
         
         # Type/update text in text fields on the page
         self.type("#inputPostalNumber", "12395")
         # Verify that a button click changes text on the page
         self.click("#submitButton")
-        self.assert_text("Vi har inte hemkörning till dig!", "#postalNumberMessage")
+        self.assert_text("Vi har inte hembesök till dig!", "#postalNumberMessage")
 
         # Type/update text in text fields on the page
         self.type("#inputPostalNumber", "dasdw")
@@ -33,13 +33,13 @@ class testPostnummer(BaseCase):
         self.type("#inputPostalNumber", "318749817897218930")
         # Verify that a button click changes text on the page
         self.click("#submitButton")
-        self.assert_text("Vi har inte hemkörning till dig!", "#postalNumberMessage")
+        self.assert_text("Vi har inte hembesök till dig!", "#postalNumberMessage")
 
         # Type/update text in text fields on the page
         self.type("#inputPostalNumber", "9 81 4 2")
         # Verify that a button click changes text on the page
         self.click("#submitButton")
-        self.assert_text("Vi har hemkörning till dig!", "#postalNumberMessage")
+        self.assert_text("Vi har hembesök till dig!", "#postalNumberMessage")
 
         # Type/update text in text fields on the page
         self.type("#inputPostalNumber", "98-142")
