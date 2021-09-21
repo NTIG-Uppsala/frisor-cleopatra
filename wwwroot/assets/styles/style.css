@@ -444,12 +444,12 @@ ul.gallery li.gallery:hover {
 }
 
 @media screen\0 {
-    .hidden-mobile {
+    .hidden-big-screen {
         display: none;
    }
 }
 @media screen\9 {
-    .hidden-mobile {
+    .hidden-big-screen {
         display: none;
    }
 }
