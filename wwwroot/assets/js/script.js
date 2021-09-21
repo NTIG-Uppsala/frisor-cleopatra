@@ -159,7 +159,7 @@ function getPostalNumberInput(){
 
     let isPossible = checkPostalNumber(parseInt(PostalNumber));
     if(isPossible && isOnlyNumbers){
-        target.innerHTML = "Vi har hemkörning till dig!";
+        target.innerHTML = "Vi har hembesök till dig!";
         target.style.display = "block";
         target.classList.add('text-success');
         target.classList.remove('text-danger');
@@ -169,7 +169,7 @@ function getPostalNumberInput(){
         target.classList.add('text-danger');
         target.classList.remove('text-success');
     } else {
-        target.innerHTML = "Vi har inte hemkörning till dig!";
+        target.innerHTML = "Vi har inte hembesök till dig!";
         target.style.display = "block";
         target.classList.add('text-danger');
         target.classList.remove('text-success');
