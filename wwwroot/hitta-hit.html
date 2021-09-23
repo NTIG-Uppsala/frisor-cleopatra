@@ -1,0 +1,87 @@
+---
+layout: default
+---
+<section>
+    <div id="Kartor" class="anchor"></div>
+    <div class="d-flex bg-darker">
+        <div class="container-lg justify-content-center align-items-center my-5">
+            <h2 class="text-white mt-5 subtitle text-center mb-5">HITTA HIT</h2>
+            <div class="row justify-content-center">
+                <div class="text-white standard-text justify-content-center">
+                    <div id="map"></div> <!-- Here the map is added -->
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2sIHlhsPqg0KICBgI75femlj1dsyQYLI&callback=initMap&v=weekly" async></script>
+                        <div class="maptext mt-3 text-center">
+                            <h2>ÖPPETTIDER</h2>
+                            <div class="row justify-content-center">
+                            <ul class="col-4 text-end mr-3 text-white standard-text justify-content-center">
+                                <li>Måndag</li>
+                                <li>Tisdag</li>
+                                <li>Onsdag</li>
+                                <li>Torsdag</li>
+                                <li>Fredag</li>
+                                <li>Lördag</li>
+                                <li>Söndag</li>
+                            </ul>
+                            <ul class="col-4 text-start ml-3 text-white standard-text pb-3">
+                                <li>10-16</li>
+                                <li>10-16</li>
+                                <li>10-16</li>
+                                <li>10-16</li>
+                                <li>10-16</li>
+                                <li>12-15</li>
+                                <li>STÄNGT</li>
+                            </ul>
+
+                            <h3>STÄNGDA DAGAR</h3>
+                                <ul class="col-6 text-end mr-3 text-white standard-text justify-content-center" id="hideListDay">
+                                    <li>Nyårsdagen</li>
+                                    <li>Trettondedag</li>
+                                    <li>Första maj</li>
+                                    <li>Sveriges nationaldag</li>
+                                    <li>Julafton</li>
+                                    <li>Juldagen</li>
+                                    <li>Annandag jul</li>
+                                    <li>Nyårsafton</li>
+                                </ul>
+                                <ul class="col-6 text-start ml-3 text-white standard-text pb-3" id="hideListDate">
+                                    <li>1/1 </li>
+                                    <li>6/1 </li>
+                                    <li>1/5 </li>
+                                    <li>6/6 </li>
+                                    <li>24/12 </li>
+                                    <li>25/12 </li>
+                                    <li>26/12 </li>
+                                    <li>31/12</li>
+                                </ul>
+                                <ul class="col-6 text-end mr-3 text-white standard-text justify-content-center" id="showListDay">
+                                    <li id="dayLi1"></li>
+                                    <li id="dayLi2"></li>
+                                    <li id="dayLi3"></li>
+                                    <li id="dayLi4"></li>
+                                    <li id="dayLi5"></li>
+                                    <li id="dayLi6"></li>
+                                    <li id="dayLi7"></li>
+                                    <li id="dayLi8"></li>
+                                </ul>
+                                <ul class="col-6 text-start ml-3 text-white standard-text pb-3" id="showListDate">
+                                    <li id="dateLi1" class="capitalize"></li>
+                                    <li id="dateLi2" class="capitalize"></li>
+                                    <li id="dateLi3" class="capitalize"></li>
+                                    <li id="dateLi4" class="capitalize"></li>
+                                    <li id="dateLi5" class="capitalize"></li>
+                                    <li id="dateLi6" class="capitalize"></li>
+                                    <li id="dateLi7" class="capitalize"></li>
+                                    <li id="dateLi8" class="capitalize"></li>
+                                </ul>
+
+                            <h2>ADRESS</h2>
+                            <p class="standard-text">Fjällgatan 32H, <br>981 39 Kiruna.</p>
+                            <p class="adress-text"> <a href="https://www.google.com/maps/dir//Fj%C3%A4llgatan+32,+981+39+Kiruna/@67.8660547,20.2318298,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x45d0ba6368d7c9a3:0xe3887ef038c559b0!2m2!1d20.2340185!2d67.8660547"><b> Klicka här</b></a> för att få väginstruktioner från Google maps.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
