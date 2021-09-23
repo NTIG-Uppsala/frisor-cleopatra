@@ -191,19 +191,9 @@ Return: None
 */
 
 function updateClosedDayList(today){
-    if (window.location.href.includes("swedish")){
-        const dateList = [
-            { title: 'Nyårsdagen', month: 1, day: 1 },
-            { title: 'Trettondedag', month: 1, day: 6 },
-            { title: 'Första maj', month: 5, day: 1  },
-            { title: 'Sveriges nationaldag', month: 6, day: 6 },
-            { title: 'Julafton', month: 12, day: 24 },
-            { title: 'Juldagen', month: 12, day: 25 },
-            { title: 'Annandag jul', month: 12, day: 26 },
-            { title: 'Nyårsafton', month: 12, day: 31 }
-          ];
-    }
-    else if (window.location.href.includes("english")){
+    url = window.location.href;
+    console.log(url);
+    if (url.includes("english")){
         const dateList = [
             { title: "New Year's Day", month: 1, day: 1 },
             { title: "Thirteenth Day", month: 1, day: 6 },
@@ -216,7 +206,16 @@ function updateClosedDayList(today){
           ];
     }
     else {
-        console.error("Path not valid");
+        const dateList = [
+            { title: 'Nyårsdagen', month: 1, day: 1 },
+            { title: 'Trettondedag', month: 1, day: 6 },
+            { title: 'Första maj', month: 5, day: 1  },
+            { title: 'Sveriges nationaldag', month: 6, day: 6 },
+            { title: 'Julafton', month: 12, day: 24 },
+            { title: 'Juldagen', month: 12, day: 25 },
+            { title: 'Annandag jul', month: 12, day: 26 },
+            { title: 'Nyårsafton', month: 12, day: 31 }
+          ];
     }   
     
     
