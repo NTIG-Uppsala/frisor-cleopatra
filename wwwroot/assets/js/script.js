@@ -202,7 +202,7 @@ function updateClosedDayList(today){
             { title: "Sweden's National Day", month: 6, day: 6 },
             { title: "Christmas Eve", month: 12, day: 24 },
             { title: "Christmas Day", month: 12, day: 25 },
-            { title: "Second Day of Christmas", month: 12, day: 26 },
+            { title: "2nd Day Christmas", month: 12, day: 26 },
             { title: "New Year's Eve", month: 12, day: 31 }
           ];
     }
