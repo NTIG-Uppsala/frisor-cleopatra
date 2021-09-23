@@ -2,9 +2,9 @@ from seleniumbase import BaseCase
 import os
 
 #url = "file:" + os.path.abspath('../../wwwroot/index.html')
-startPage = "file:/home/runner/work/frisor-cleopatra/frisor-cleopatra/wwwroot/_site/index.html"
-hittaHit = "file:/home/runner/work/frisor-cleopatra/frisor-cleopatra/wwwroot/_site/hitta-hit.html"
-varaFrisorer = "file:/home/runner/work/frisor-cleopatra/frisor-cleopatra/wwwroot/_site/vara-frisorer.html"
+startPage = "file:/home/runner/work/frisor-cleopatra/frisor-cleopatra/swedish/index.html"
+hittaHit = "file:/home/runner/work/frisor-cleopatra/frisor-cleopatra/swedish/hitta-hit.html"
+varaFrisorer = "file:/home/runner/work/frisor-cleopatra/frisor-cleopatra/swedish/vara-frisorer.html"
 
 class testPostnummer(BaseCase):
     def test_start(self):
