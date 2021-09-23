@@ -1,0 +1,186 @@
+---
+layout: default
+---
+<section class="home bg-tint">
+    <div class="bg-image"></div>  <!-- Background div. Puts an image in background --> 
+    <div class="d-flex">
+        <div class="d-flex container-lg mt-5 mb-5 main-text">
+            <ul class="standard-text">
+                <li><h2 class="subtitle">Välkommen till den lyxigaste hårsalongen i Kiruna.</h2></li>
+                <li><p class="main-section-app">För att boka en tid tveka inte att ringa oss på <b><a href="tel:0630-555-555">063-055 55 55</a></b>.</p></li>
+                <li><p class="main-section-app">Du kan även boka hembesök, för att kolla om vi kan komma till ditt postnummer så <b><a href="#Hembesok">klicka här</a></b>.</p></li>
+                <li>    
+                    <a href="#Tjanster" class="standard-text btn button noselect">TJÄNSTER</a>
+                    <a href="#Oppettider" class="standard-text btn button noselect">ÖPPETTIDER</a>
+                    <a href="#Hembesok" class="standard-text btn button noselect">HEMBESÖK</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</section>
+<!-- Beginning of the Opening hours section -->
+<section>
+    <div id="Oppettider" class="anchor"></div>
+    <div class="d-flex bg-darker">
+        <div class="container-lg flex-column justify-content-center align-items-center my-5">
+            <h2 class="text-white subtitle text-center mb-5">ÖPPETTIDER</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-4 col-6 text-white standard-text justify-content-center">
+                    <div class="d-flex">
+                        <div><p>Måndag</p></div>
+                        <div class="ms-auto"><p>10-16</p></div>
+                    </div>
+                    <div class="d-flex">
+                        <div><p>Tisdag</p></div>
+                        <div class="ms-auto"><p>10-16</p></div>
+                    </div>
+                    <div class="d-flex">
+                        <div><p>Onsdag</p></div>
+                        <div class="ms-auto"><p>10-16</p></div>
+                    </div>
+                    <div class="d-flex">
+                        <div><p>Torsdag</p></div>
+                        <div class="ms-auto"><p>10-16</p></div>
+                    </div>
+                    <div class="d-flex">
+                        <div><p>Fredag</p></div>
+                        <div class="ms-auto"><p>10-16</p></div>
+                    </div>
+                    <div class="d-flex">
+                        <div><p>Lördag</p></div>
+                        <div class="ms-auto"><p>12-15</p></div>
+                    </div>
+                    <div class="d-flex">
+                        <div><p>Söndag</p></div>
+                        <div class="ms-auto"><p>STÄNGT</p></div>
+                    </div>
+                </div>
+                <p class="text-center mb-5">För mer information om öppettider ring oss <b><a href="tel:0630-555-555">063-055 55 55</a></b>.</p>
+                <div class="anchor" id="Hembesok"> </div>
+                <div>
+                    <h3 class="text-center">Hembesök</h3>
+                    <p class="text-center">Vi har nyligen börjat med hembesök. Kolla om vi har hembesök till ditt postnummer i textrutan.</p>
+                    <div class="justify-content-center align-items-center text-center">
+                        <input style="display: none;" type="text" class="col-xs-1" placeholder="Postnummer" id="inputPostalNumber">
+                        <input style="display: none;" class="button inputSubmit" name="submit"  type="submit" id="submitButton" value="Sök" onclick="getPostalNumberInput()" />
+                        <p class="mb-3" id="postalNumberMessage"></p>
+                    </div>
+                    <p id="hiddenJS" class="text-center" style="display: block;"><b>Just nu har vi hembesök till 981 38, 981 39, 981 40 och 981 42.</b></p>
+                    <p class="text-center">För mer information om hembesök ring oss <b><a href="tel:0630-555-555">063-055 55 55</a></b>.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Beginning of the Images section -->
+<section>
+    <div id="Bilder" class="anchor"></div>
+    <div class="d-flex bg-dark noselect">
+        <div class="container-lg my-5 bg-dark">
+            <h2 class="mb-5 subtitle" style="text-align: center;">BILDER</h2>
+            <ul class="gallery hidden-mobile p-0">  <!-- Images shown when the device has a screen larger than 1000px in width -->
+                <li class="gallery">
+                    <span class="gallery">Våra lokaler</span>
+                    <img alt="Våra Lokaler" class="gallery" src='../assets/images/bild1.jpg' /></li>
+                <li class="gallery">
+                    <span class="gallery">Klippning långt hår</span>
+                    <img alt="Klippning Långt Hår" class="gallery" src='../assets/images/bild2.jpg' /></li>
+                <li class="gallery">
+                    <span class="gallery">Klippning kort hår</span>
+                    <img alt="Klippning Kort Hår" class="gallery" src='../assets/images/bild3.jpg' /></li>
+                <li class="gallery">
+                    <span class="gallery">Hårprodukter</span>
+                    <img alt="Hårprodukter" class="gallery" src='../assets/images/bild4.jpg' /></li>
+                <li class="gallery">
+                    <span class="gallery">Barnklippning</span>
+                    <img alt="Barn klippning" class="gallery" src='../assets/images/bild5.jpg' /></li>
+            </ul>
+            <div class="hidden-big-screen"> <!-- Images shown when the device has a screen smaller than 1000px in width -->
+                <figure>
+                    <img alt="Våra Lokaler" class="responsive" src='../assets/images/bild1.jpg' />
+                    <figcaption><span class="image-text">Våra lokaler</span></figcaption>
+                </figure>
+                <figure>
+                    <img alt="Klippning Långt Hår" class="responsive" src='../assets/images/bild2.jpg' />
+                    <figcaption><span class="image-text">Klippning långt hår</span></figcaption>
+                </figure>
+                <figure>
+                    <img alt="Klippning Kort Hår" class="responsive" src='../assets/images/bild3.jpg' />
+                    <figcaption><span class="image-text">Klippning kort hår</span></figcaption>
+                </figure>
+                <figure>
+                    <img alt="Hårprodukter" class="responsive" src='../assets/images/bild4.jpg' />
+                    <figcaption><span class="image-text">Hårprodukter</span></figcaption>
+                </figure>
+                <figure>
+                    <img alt="Barn klippning" class="responsive" src='../assets/images/bild5.jpg' />
+                    <figcaption><span class="image-text">Barnklippning</span></figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Beginning of the Services section -->
+<section>
+    <div id="Tjanster" class="anchor"></div>
+    <div class="d-flex bg-darker">
+        <div class="container-lg my-5 bg-darker">
+            <h2 class="text-center mb-5 subtitle">TJÄNSTER</h2>
+            <div class="row">
+                <div id="klippning" class="col-sm-4 text-center">
+                    <h3>Långt hår</h3>
+                    <p class="standard-text">600 kr</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <h3>Kort hår</h3>
+                    <p class="standard-text">200 kr</p>
+                </div>
+                <div id="fargning" class="col-sm-4 text-center">
+                    <h3>Färgning</h3>
+                    <p class="standard-text">560 kr</p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="skagg" class="col-sm-4 text-center">
+                    <h3>Skägg</h3>
+                    <p class="standard-text">150 kr</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <h3>Toppning</h3>
+                    <p class="standard-text">200 kr</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <h3>Barn (0-13 år)</h3>
+                    <p class="standard-text">150 kr</p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="forlangning" class="col-sm-4 text-center">
+                    <h3>Extensions kort</h3>
+                    <p class="standard-text">300 kr</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <h3>Extensions normal</h3>
+                    <p class="standard-text">400 kr</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <h3>Extensions lång</h3>
+                    <p class="standard-text">500 kr</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 text-center">
+                    <h3>Långt hår stamkund</h3>
+                    <p class="standard-text">500 kr</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <h3>Kort hår stamkund</h3>
+                    <p class="standard-text">150 kr</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
