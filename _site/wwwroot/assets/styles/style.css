@@ -137,7 +137,11 @@ p {
     min-height: 100%;
 }
 .frisor-section{
+<<<<<<< HEAD
     min-height: 77.5vh;
+=======
+    min-height: 27.5vh;
+>>>>>>> refs/remotes/origin/master
 }
 
 @media only screen and (max-width:750px){
@@ -244,12 +248,15 @@ p {
     list-style: none;
 }
 
+<<<<<<< HEAD
 .logo2-header-font {
     font-family: 'Cuprum';
     text-decoration: none;
     list-style: none;
 }
 
+=======
+>>>>>>> refs/remotes/origin/master
 .centerMain {
     background: white;
     padding: 5%;

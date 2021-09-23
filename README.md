@@ -9,6 +9,8 @@
 ## <p align="center">General info</p>
 <p align="center">A static website for a client. Its focused on working well on phones and without javascript</p>
 
+### <p align="center">Website Link :[Link](https://ntig-uppsala.github.io/frisor-cleopatra/)</p>
+
 ### <p align="center">Current website view Desktop</p>
 [<p align="center">MainPage View</p>](https://ntig-uppsala.github.io/frisor-cleopatra/views/MainPage.png)
 [<p align="center">FindUsPage View</p>](https://ntig-uppsala.github.io/frisor-cleopatra/views/Hitta-hitPage.png)

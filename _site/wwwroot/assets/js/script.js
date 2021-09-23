@@ -208,7 +208,11 @@ function updateClosedDayList(today){
       let futureDates = [];
       let pastDates = [];
       for(let i = 0; i < dateList.length; i++){
+<<<<<<< HEAD
             if(dateList[i].month <= currentMonth){
+=======
+            if((dateList[i].month <= currentMonth)){
+>>>>>>> refs/remotes/origin/master
                 if(dateList[i].day >= currentDay && dateList[i].month == currentMonth){
                     futureDates.push(dateList[i]);
                 }
@@ -225,8 +229,13 @@ function updateClosedDayList(today){
     dateArr.push.apply(dateArr, pastDates);
 
     for(let x = 0; x < dateArr.length; x++){
+<<<<<<< HEAD
         $("#dayIndex" + (x + 1)).text(dateArr[x].title);
         $("#dateIndex" + (x + 1)).text(dateArr[x].day + "/" + dateArr[x].month); 
+=======
+        $("#dayLi" + (x + 1)).text(dateArr[x].title);
+        $("#dateLi" + (x + 1)).text(dateArr[x].day + "/" + dateArr[x].month); 
+>>>>>>> refs/remotes/origin/master
     }
     
 }
