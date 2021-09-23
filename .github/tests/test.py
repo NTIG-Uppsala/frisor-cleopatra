@@ -2,7 +2,7 @@ from seleniumbase import BaseCase
 import os
 
 #url = "file:" + os.path.abspath('../../wwwroot/index.html')
-startPage = "file:/home/runner/work/frisor-cleopatra/swedish/index.html"
+startPage = "file:/home/runner/work/frisor-cleopatra/frisor-cleopatra/swedish/index.html"
 hittaHit = "file:/home/runner/work/frisor-cleopatra/frisor-cleopatra/swedish/hitta-hit.html"
 varaFrisorer = "file:/home/runner/work/frisor-cleopatra/frisor-cleopatra/swedish/vara-frisorer.html"
 
@@ -52,22 +52,22 @@ class testStangdaDagLista(BaseCase):
         self.open(hittaHit)
 
         self.execute_script("updateClosedDayList(new Date(Date.UTC(2012, 11, 25, 3, 0, 0, 200)))")
-        self.assert_text("Juldagen", "#dayLi1")
+        self.assert_text("Juldagen", "#dayIndex1")
 
         self.execute_script("updateClosedDayList(new Date(Date.UTC(2012, 6, 7, 3, 0, 0, 200)))")
-        self.assert_text("Julafton", "#dayLi1")
+        self.assert_text("Julafton", "#dayIndex1")
 
         self.execute_script("updateClosedDayList(new Date(Date.UTC(2012, 0, 1, 3, 0, 0, 200)))")
-        self.assert_text("Nyårsdagen", "#dayLi1")
+        self.assert_text("Nyårsdagen", "#dayIndex1")
 
         self.execute_script("updateClosedDayList(new Date(Date.UTC(2012, 11, 31, 3, 0, 0, 200)))")
-        self.assert_text("Nyårsafton", "#dayLi1")
+        self.assert_text("Nyårsafton", "#dayIndex1")
 
         self.execute_script("updateClosedDayList(new Date(Date.UTC(2012, 3, 29, 3, 0, 0, 200)))")
-        self.assert_text("Första maj", "#dayLi1")
+        self.assert_text("Första maj", "#dayIndex1")
 
         self.execute_script("updateClosedDayList(new Date(Date.UTC(2012, 0, 5, 3, 0, 0, 200)))")
-        self.assert_text("Trettondedag", "#dayLi1")
+        self.assert_text("Trettondedag", "#dayIndex1")
 
 
 class textAssertsStartPage(BaseCase):
