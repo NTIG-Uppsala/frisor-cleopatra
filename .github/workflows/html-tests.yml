@@ -42,8 +42,11 @@ jobs:
           node-version: '14'
       - run: npm install --global capture-website-cli
           
-      - name: Live Check (Curl)
-        run: curl -f https://ntig-uppsala.github.io/frisor-cleopatra/index.html
+      - name: Live Check Swedish (Curl)
+        run: curl -f https://ntig-uppsala.github.io/frisor-cleopatra/swedish/index.html
+        
+      - name: Live Check English (Curl)
+        run: curl -f https://ntig-uppsala.github.io/frisor-cleopatra/english/index.html
   
         #Because of the way the screenshot is taken we can neither set hover nor pointer attributes and therefore the easiest way to fix it is to just remove the element
       - name: HTML to Image desktop
