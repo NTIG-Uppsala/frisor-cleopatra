@@ -2,7 +2,7 @@ from seleniumbase import BaseCase
 import os
 
 #url = "file:" + os.path.abspath('../../wwwroot/index.html')
-startPage = "file:/home/runner/work/frisor-cleopatra/frisor-cleopatra/swedish/index.html"
+startPage = "file:/home/runner/work/frisor-cleopatra/swedish/index.html"
 hittaHit = "file:/home/runner/work/frisor-cleopatra/frisor-cleopatra/swedish/hitta-hit.html"
 varaFrisorer = "file:/home/runner/work/frisor-cleopatra/frisor-cleopatra/swedish/vara-frisorer.html"
 
