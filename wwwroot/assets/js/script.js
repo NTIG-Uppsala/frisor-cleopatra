@@ -193,8 +193,9 @@ Return: None
 function updateClosedDayList(today){
     url = window.location.href;
     console.log(url);
+    var dateList = [];
     if (url.includes("english")){
-        const dateList = [
+        dateList = [
             { title: "New Year's Day", month: 1, day: 1 },
             { title: "Thirteenth Day", month: 1, day: 6 },
             { title: "1st of May", month: 5, day: 1  },
@@ -206,7 +207,7 @@ function updateClosedDayList(today){
           ];
     }
     else {
-        const dateList = [
+        dateList = [
             { title: 'Nyårsdagen', month: 1, day: 1 },
             { title: 'Trettondedag', month: 1, day: 6 },
             { title: 'Första maj', month: 5, day: 1  },
