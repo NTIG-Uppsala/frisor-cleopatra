@@ -16,7 +16,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: helaili/jekyll-action@v2
+      
+      - uses: helaili/jekyll-action@2.2.0
         with:
+          target_branch: gh-pages
+          target_path: v1.0 
           keep_history: true
           token: ${{ secrets.GITHUB_TOKEN }}

@@ -3,4 +3,4 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   
-  keep_files: [.github, .git, hello.html]
+keep_files: [.github, .git, hello.html]
