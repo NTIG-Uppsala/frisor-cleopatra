@@ -191,16 +191,35 @@ Return: None
 */
 
 function updateClosedDayList(today){
-    const dateList = [
-        { title: 'Nyårsdagen', month: 1, day: 1 },
-        { title: 'Trettondedag', month: 1, day: 6 },
-        { title: 'Första maj', month: 5, day: 1  },
-        { title: 'Sveriges nationaldag', month: 6, day: 6 },
-        { title: 'Julafton', month: 12, day: 24 },
-        { title: 'Juldagen', month: 12, day: 25 },
-        { title: 'Annandag jul', month: 12, day: 26 },
-        { title: 'Nyårsafton', month: 12, day: 31 }
-      ];
+    if (window.location.href.includes("swedish")){
+        const dateList = [
+            { title: 'Nyårsdagen', month: 1, day: 1 },
+            { title: 'Trettondedag', month: 1, day: 6 },
+            { title: 'Första maj', month: 5, day: 1  },
+            { title: 'Sveriges nationaldag', month: 6, day: 6 },
+            { title: 'Julafton', month: 12, day: 24 },
+            { title: 'Juldagen', month: 12, day: 25 },
+            { title: 'Annandag jul', month: 12, day: 26 },
+            { title: 'Nyårsafton', month: 12, day: 31 }
+          ];
+    }
+    else if (window.location.href.includes("english")){
+        const dateList = [
+            { title: "New Year's Day", month: 1, day: 1 },
+            { title: "Thirteenth Day", month: 1, day: 6 },
+            { title: "1st of May", month: 5, day: 1  },
+            { title: "Sweden's National Day", month: 6, day: 6 },
+            { title: "Christmas Eve", month: 12, day: 24 },
+            { title: "Christmas Day", month: 12, day: 25 },
+            { title: "Second Day of Christmas", month: 12, day: 26 },
+            { title: "New Year's Eve", month: 12, day: 31 }
+          ];
+    }
+    else {
+        console.error("Path not valid");
+    }   
+    
+    
 
       var currentMonth = parseInt(today.getMonth() + 1); //get month returns a value between 0 and 11. setting +1 gets the real month number.
       var currentDay = parseInt(today.getDate());
