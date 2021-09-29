@@ -287,6 +287,15 @@ p {
     height: 50px;
     width: auto;
 }
+.lang-link{
+    margin-left: 1vh;
+    height: 1.9rem;
+    width: auto;
+}
+.lang-link img{
+    height: 1.9rem;
+    width: auto;
+}
 figcaption {
     margin-top: -2.6rem;
 }

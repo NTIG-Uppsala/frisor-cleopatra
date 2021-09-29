@@ -191,16 +191,35 @@ Return: None
 */
 
 function updateClosedDayList(today){
-    const dateList = [
-        { title: 'Nyårsdagen', month: 1, day: 1 },
-        { title: 'Trettondedag', month: 1, day: 6 },
-        { title: 'Första maj', month: 5, day: 1  },
-        { title: 'Sveriges nationaldag', month: 6, day: 6 },
-        { title: 'Julafton', month: 12, day: 24 },
-        { title: 'Juldagen', month: 12, day: 25 },
-        { title: 'Annandag jul', month: 12, day: 26 },
-        { title: 'Nyårsafton', month: 12, day: 31 }
-      ];
+    url = window.location.href;
+    console.log(url);
+    var dateList = [];
+    if (url.includes("english")){
+        dateList = [
+            { title: "New Year's Day", month: 1, day: 1 },
+            { title: "Thirteenth Day", month: 1, day: 6 },
+            { title: "1st of May", month: 5, day: 1  },
+            { title: "Sweden's National Day", month: 6, day: 6 },
+            { title: "Christmas Eve", month: 12, day: 24 },
+            { title: "Christmas Day", month: 12, day: 25 },
+            { title: "2nd Day Christmas", month: 12, day: 26 },
+            { title: "New Year's Eve", month: 12, day: 31 }
+          ];
+    }
+    else {
+        dateList = [
+            { title: 'Nyårsdagen', month: 1, day: 1 },
+            { title: 'Trettondedag', month: 1, day: 6 },
+            { title: 'Första maj', month: 5, day: 1  },
+            { title: 'Sveriges nationaldag', month: 6, day: 6 },
+            { title: 'Julafton', month: 12, day: 24 },
+            { title: 'Juldagen', month: 12, day: 25 },
+            { title: 'Annandag jul', month: 12, day: 26 },
+            { title: 'Nyårsafton', month: 12, day: 31 }
+          ];
+    }   
+    
+    
 
       var currentMonth = parseInt(today.getMonth() + 1); //get month returns a value between 0 and 11. setting +1 gets the real month number.
       var currentDay = parseInt(today.getDate());
@@ -208,7 +227,7 @@ function updateClosedDayList(today){
       let futureDates = [];
       let pastDates = [];
       for(let i = 0; i < dateList.length; i++){
-            if((dateList[i].month <= currentMonth)){
+            if(dateList[i].month <= currentMonth){
                 if(dateList[i].day >= currentDay && dateList[i].month == currentMonth){
                     futureDates.push(dateList[i]);
                 }
@@ -225,8 +244,8 @@ function updateClosedDayList(today){
     dateArr.push.apply(dateArr, pastDates);
 
     for(let x = 0; x < dateArr.length; x++){
-        $("#dayLi" + (x + 1)).text(dateArr[x].title);
-        $("#dateLi" + (x + 1)).text(dateArr[x].day + "/" + dateArr[x].month); 
+        $("#dayIndex" + (x + 1)).text(dateArr[x].title);
+        $("#dateIndex" + (x + 1)).text(dateArr[x].day + "/" + dateArr[x].month); 
     }
     
 }
