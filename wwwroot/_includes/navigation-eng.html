@@ -1,14 +1,17 @@
 <nav class="nav affix"> <!-- Start of the navbar -->
     <div class="container-lg">
         <div class="logo">
-            <a href="#" class="logo-header-font"><img class="logo hidden-mobile" src="../assets/images/favicon-48x48.png" alt="">FRISÖR CLEOPATRA</a>
+            <a href="/english/index.html" class="logo-header-font"><img class="logo hidden-mobile" src="../assets/images/favicon-48x48.png" alt="">FRISÖR CLEOPATRA</a>
         </div>
         <div id="mainListDiv" class="main_list">
             <ul class="navlinks">
-                <li class="navLink disabled"><a href="index.html">HOMEPAGE</a></li><!-- Index 1 -->
-                <li class="navLink"><a href="find-us.html">FIND US</a></li><!-- Index 2 -->
-                <li class="navLink"><a href="our-staff.html">OUR STAFF</a></li><!-- Index 3 -->
-                <li class="navLink"><a href="../swedish/index.html"><img src="../assets/images/swe-icon.png" class="icon-link p-2" alt="Swedish"></a></li><!-- Index 4 -->
+              {% for item in site.data.navigation-eng %}
+                <li class="navLink"><a href="{{ item.link }}">{{ item.name }}</a></li>
+              {% endfor %}
+              {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+              {% for page in pages %}
+                <li><a href="{{ page.url }}" class="{{ page.lang }}"><img src="/assets/images/{{ page.lang }}.png" class="icon-link p-2" alt="Engelska"></a></li>
+              {% endfor %}
             </ul>
         </div>
         <img class="logo2 hidden-big-screen" src="../assets/images/favicon-48x48.png" alt="">
