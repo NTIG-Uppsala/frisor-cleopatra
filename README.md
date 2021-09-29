@@ -24,12 +24,13 @@
 [<p align="center">StaffPage View Iphone X </p>](https://ntig-uppsala.github.io/frisor-cleopatra/views/Vara-frisorerPagePhoneX.png)
 ## <p align="center">Contributors</p>
 ### <p align="center">Product Owner</p>
- [<p align="center">@johan-mattias</p>](https://github.com/johan-mattias)
+ [<p align="center">@bastkerg</p>](https://github.com/bastkerg)
 
 ### <p align="center">Developers</p>
-[<p align="center">@liljekvist</p>](https://github.com/liljekvist)
-[<p align="center">@SebastianClavensjo</p>](https://github.com/SebastianClavensjo)
-[<p align="center">@Jonatan-Mone</p>](https://github.com/Jonatan-Mone)
+[<p align="center">@AlbinNosskire</p>](https://github.com/AlbinNosskire)
+[<p align="center">@JoelNymark</p>](https://github.com/JoelNymark)
+[<p align="center">@ViktorIsenborg</p>](https://github.com/ViktorIsenborg)
+[<p align="center">@PontusForsmark</p>](https://github.com/PontusForsmark)
 
 ## <p align="center">Documents</p>
 [<p align="center">Definition of Done</p>](https://github.com/NTIG-Uppsala/frisor-cleopatra/blob/master/definition-of-done.md)
