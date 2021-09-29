@@ -1,7 +1,7 @@
 <nav class="nav affix"> <!-- Start of the navbar -->
     <div class="container-lg">
         <div class="logo">
-            <a href="/english/index.html" class="logo-header-font"><img class="logo hidden-mobile" src="../assets/images/favicon-48x48.png" alt="">FRISÖR CLEOPATRA</a>
+            <a href="../english/index.html" class="logo-header-font"><img class="logo hidden-mobile" src="../assets/images/favicon-48x48.png" alt="">FRISÖR CLEOPATRA</a>
         </div>
         <div id="mainListDiv" class="main_list">
             <ul class="navlinks">
@@ -10,7 +10,7 @@
               {% endfor %}
               {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
               {% for page in pages %}
-                <li><a href="{{ page.url }}" class="{{ page.lang }}"><img src="/assets/images/{{ page.lang }}.png" class="icon-link p-2" alt="Engelska"></a></li>
+                <li><a href="{{ page.url }}" class="{{ page.lang }}"><img src="../assets/images/{{ page.lang }}.png" class="icon-link p-2" alt="Engelska"></a></li>
               {% endfor %}
             </ul>
         </div>

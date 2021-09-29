@@ -1,6 +1,6 @@
 - name: HOMEPAGE
-  link: /english/index.html
+  link: ../english/index.html
 - name: FIND US
-  link: /english/find-us.html
+  link: ../english/find-us.html
 - name: OUR STAFF
-  link: /english/our-staff.html
+  link: ../english/our-staff.html
