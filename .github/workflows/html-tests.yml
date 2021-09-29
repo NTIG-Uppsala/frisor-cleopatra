@@ -43,7 +43,7 @@ jobs:
       - run: npm install --global capture-website-cli
           
       - name: Live Check Swedish (Curl)
-        run: curl -f https://ntig-uppsala.github.io/frisor-cleopatra/swedish/index.html
+        run: curl -f https://ntig-uppsala.github.io/frisor-cleopatra/index.html
         
       - name: Live Check English (Curl)
         run: curl -f https://ntig-uppsala.github.io/frisor-cleopatra/english/index.html
