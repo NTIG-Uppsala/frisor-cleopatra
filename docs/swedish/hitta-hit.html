@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html lang="sv"> <!-- Sets the language of the website to Swedish -->
+    <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="/frisor-cleopatra/assets/images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/frisor-cleopatra/assets/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/frisor-cleopatra/assets/images/favicon-16x16.png">
+        <link rel="manifest" href="/frisor-cleopatra/assets/images/site.webmanifest"><!-- Favicon -->
+        
+        <meta charset="utf-8"> <!-- Allows for additional letters such as Å, Ä and Ö -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Set-up for better functionality on mobile phones and smaller devices -->
+        <title>Frisör Cleopatra</title>
+        <link rel="stylesheet" href="/frisor-cleopatra/assets/styles/bootstrap/bootstrap.min.css"> <!-- bootstrap5 stylesheet -->
+        <link rel="stylesheet" href="/frisor-cleopatra/assets/styles/style.css"> <!-- stylesheet for the website -->
+        <script src="/frisor-cleopatra/assets/js/jquery-3.6.0.min.js"></script> <!-- JQuery document -->
+        <script src="/frisor-cleopatra/assets/js/script.js"></script> <!-- javaScript document -->
+        <script defer src="/frisor-cleopatra/assets/js/map.js"></script>
+        <link type="application/atom+xml" rel="alternate" href="/feed.xml" />
+        <!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:locale" content="sv" />
+<meta name="twitter:card" content="summary" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"/swedish/hitta-hit.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav class="nav affix"> <!-- Start of the navbar -->
+    <div class="container-lg">
+        <div class="logo">
+            <a href="/frisor-cleopatra/" class="logo-header-font"><img class="logo hidden-mobile" src="/frisor-cleopatra/assets/images/favicon-48x48.png" alt="">FRISÖR CLEOPATRA</a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+              
+                <li class="navLink"><a href="/frisor-cleopatra/">STARTSIDA</a></li>
+              
+                <li class="navLink"><a href="/frisor-cleopatra/swedish/hitta-hit.html">HITTA HIT</a></li>
+              
+                <li class="navLink"><a href="/frisor-cleopatra/swedish/vara-frisorer.html">VÅRA FRISÖRER</a></li>
+              
+              
+              
+              <li><a href="/frisor-cleopatra//english/find-us.html" class="lang-link "><img src="/frisor-cleopatra/assets/images/en.png" class="lang-link" alt="Engelska"></a></li>
+              
+              <li><a href="/frisor-cleopatra//swedish/hitta-hit.html" class="lang-link "><img src="/frisor-cleopatra/assets/images/sv.png" class="lang-link" alt="Engelska"></a></li>
+              
+            </ul>
+        </div>
+        <img class="logo2 hidden-big-screen" src="/frisor-cleopatra/assets/images/favicon-48x48.png" alt="">
+        <span class="navTrigger"> <!-- This is the navbar on phones -->
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>
+        <section>
+    <div id="Kartor" class="anchor"></div>
+    <div class="d-flex bg-darker">
+        <div class="container-lg justify-content-center align-items-center my-5">
+            <h2 class="text-white mt-5 subtitle text-center mb-5">HITTA HIT</h2>
+            <div class="row justify-content-center">
+                <div class="text-white standard-text justify-content-center">
+                    <div id="map"></div> <!-- Here the map is added -->
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDH5G36feCbZjtcwEvROoxw3lgYyreVa_0&callback=initMap&libraries=&v=weekly" async></script>
+                        <div class="maptext mt-3 text-center">
+                            <h2>ÖPPETTIDER</h2>
+                            <div class="row justify-content-center">
+                            <ul class="col-4 text-end mr-3 text-white standard-text justify-content-center">
+                                <li>Måndag</li>
+                                <li>Tisdag</li>
+                                <li>Onsdag</li>
+                                <li>Torsdag</li>
+                                <li>Fredag</li>
+                                <li>Lördag</li>
+                                <li>Söndag</li>
+                            </ul>
+                            <ul class="col-4 text-start ml-3 text-white standard-text pb-3">
+                                <li>10-16</li>
+                                <li>10-16</li>
+                                <li>10-16</li>
+                                <li>10-16</li>
+                                <li>10-16</li>
+                                <li>12-15</li>
+                                <li>STÄNGT</li>
+                            </ul>
+
+                            <h3>STÄNGDA DAGAR</h3>
+                                <ul class="col-6 text-end mr-3 text-white standard-text justify-content-center" id="hideListDay">
+                                    <li>Nyårsdagen</li>
+                                    <li>Trettondedag</li>
+                                    <li>Första maj</li>
+                                    <li>Sveriges nationaldag</li>
+                                    <li>Julafton</li>
+                                    <li>Juldagen</li>
+                                    <li>Annandag jul</li>
+                                    <li>Nyårsafton</li>
+                                </ul>
+                                <ul class="col-6 text-start ml-3 text-white standard-text pb-3" id="hideListDate">
+                                    <li>1/1 </li>
+                                    <li>6/1 </li>
+                                    <li>1/5 </li>
+                                    <li>6/6 </li>
+                                    <li>24/12 </li>
+                                    <li>25/12 </li>
+                                    <li>26/12 </li>
+                                    <li>31/12</li>
+                                </ul>
+                                <ul class="col-6 text-end mr-3 text-white standard-text justify-content-center" id="showListDay">
+                                    <li id="dayIndex1"></li>
+                                    <li id="dayIndex2"></li>
+                                    <li id="dayIndex3"></li>
+                                    <li id="dayIndex4"></li>
+                                    <li id="dayIndex5"></li>
+                                    <li id="dayIndex6"></li>
+                                    <li id="dayIndex7"></li>
+                                    <li id="dayIndex8"></li>
+                                </ul>
+                                <ul class="col-6 text-start ml-3 text-white standard-text pb-3" id="showListDate">
+                                    <li id="dateIndex1" class="capitalize"></li>
+                                    <li id="dateIndex2" class="capitalize"></li>
+                                    <li id="dateIndex3" class="capitalize"></li>
+                                    <li id="dateIndex4" class="capitalize"></li>
+                                    <li id="dateIndex5" class="capitalize"></li>
+                                    <li id="dateIndex6" class="capitalize"></li>
+                                    <li id="dateIndex7" class="capitalize"></li>
+                                    <li id="dateIndex8" class="capitalize"></li>
+                                </ul>
+
+                            <h2>ADRESS</h2>
+                            <p class="standard-text">Fjällgatan 32H, <br>981 39 Kiruna.</p>
+                            <p class="adress-text"> <a href="https://www.google.com/maps/dir//Fj%C3%A4llgatan+32,+981+39+Kiruna/@67.8660547,20.2318298,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x45d0ba6368d7c9a3:0xe3887ef038c559b0!2m2!1d20.2340185!2d67.8660547"><b> Klicka här</b></a> för att få väginstruktioner från Google maps.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <footer class="bg-dark text-center text-white">
+    <div class="container-lg p-4">
+        <section>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 mb-0 mb-sm-4">
+                    <h5 class="text-uppercase">Kontakta oss</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="tel:0630-555-555">063-055 55 55</a></li>
+                            <li><a href="mailto:info@ntig-uppsala.github.io">info@ntig-uppsala.github.io</a></li>
+                            <li><a href="https://www.google.com/maps/place/Fj%C3%A4llgatan+32,+981+39+Kiruna/@67.8660567,20.2318298,17z/data=!3m1!4b1!4m5!3m4!1s0x45d0ba6368d7c9a3:0xe3887ef038c559b0!8m2!3d67.8660547!4d20.2340185" target="_blank">Fjällgatan 32H<br>981 39 Kiruna</a></li>
+                        </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-0">
+                    <h5 class="text-uppercase">Sociala medier</h5>
+                    <a href="https://www.facebook.com/ntiuppsala" class="text-white">
+                        <img src="../assets/images/fb-icon.png" class="icon-link p-2" alt="Facebook">
+                    </a>
+                    <a href="../https://www.instagram.com/ntiuppsala/" class="text-white">
+                       <img src="../assets/images/ig-icon.png" class="icon-link p-2" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <p class="text-white">© 2021 Copyright Frisör Cleopatra</p>
+    </div>
+</footer>
+    </body>
+</html>
