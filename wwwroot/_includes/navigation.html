@@ -8,7 +8,7 @@
               {% for item in site.data.[page.navbar] %}
                 <li class="navLink"><a href="{{ item.link }}">{{ item.name }}</a></li>
               {% endfor %}
-              {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+              {% assign pages=site.pages | where:"ref", page.ref | where:"loc", page.loc | sort: 'lang' %}
               {% for page in pages %}
               <li><a href="{{ site.baseurl }}{{ page.url }}" class="lang-link "><img src="{{ site.baseurl }}/assets/images/{{ page.lang }}.png" class="lang-link" alt="Engelska"></a></li>
               {% endfor %}
