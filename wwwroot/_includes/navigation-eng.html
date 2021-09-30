@@ -10,7 +10,7 @@
               {% endfor %}
               {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
               {% for page in pages %}
-                <li><a href="/frisor-cleopatra/{{ page.url }}" class="lang-link"><img src="../assets/images/{{ page.lang }}.png" class="lang-link" alt="Engelska"></a></li>
+                <li><a href="/frisor-cleopatra{{ page.url }}" class="lang-link"><img src="../assets/images/{{ page.lang }}.png" class="lang-link" alt="Engelska"></a></li>
               {% endfor %}
             </ul>
         </div>
