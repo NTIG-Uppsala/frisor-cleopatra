@@ -1,6 +1,6 @@
 - name: STARTSIDA
-  link: /frisor-cleopatra/
+  link: ../swedish/index.html
 - name: HITTA HIT
-  link: /frisor-cleopatra/swedish/hitta-hit.html
+  link: ../swedish/hitta-hit.html
 - name: VÅRA FRISÖRER
-  link: /frisor-cleopatra/swedish/vara-frisorer.html
+  link: ../swedish/vara-frisorer.html

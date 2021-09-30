@@ -2,5 +2,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+baseurl: /frisor-cleopatra
   
 keep_files: [.github, .git, hello.html]
