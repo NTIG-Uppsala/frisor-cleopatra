@@ -1,1 +1,1 @@
-Sitemap: /frisor-cleopatra/sitemap.xml
+Sitemap: http://localhost:4000/frisor-cleopatra/sitemap.xml
