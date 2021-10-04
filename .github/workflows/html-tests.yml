@@ -59,22 +59,22 @@ jobs:
         run: capture-website _site/index.html --output=../views/MainPagePixel2.png --emulate-device="Pixel 2" --full-page --delay=3 --overwrite
         
       - name: HTML to Image desktop Hitta hit
-        run: capture-website _site/kiruna/swedish/hitta-hit.html --output=../views/Hitta-hitPage.png --full-page --overwrite --userAgent="Mozilla/5.0 (Windows NT 10.0; rv:91.0) Gecko/20100101 Firefox/91.0" --width=2560
+        run: capture-website _site/swedish/hitta-hit.html --output=../views/Hitta-hitPage.png --full-page --overwrite --userAgent="Mozilla/5.0 (Windows NT 10.0; rv:91.0) Gecko/20100101 Firefox/91.0" --width=2560
         
       - name: HTML to Image Iphone X Hitta hit
-        run: capture-website _site/kiruna/swedish/hitta-hit.html --output=../views/Hitta-hitPagePhoneX.png --emulate-device="iPhone X" --full-page --delay=3 --overwrite
+        run: capture-website _site/swedish/hitta-hit.html --output=../views/Hitta-hitPagePhoneX.png --emulate-device="iPhone X" --full-page --delay=3 --overwrite
 
       - name: HTML to Image Pixel 2 Hitta hit
-        run: capture-website _site/kiruna/swedish/hitta-hit.html --output=../views/Hitta-hitPagePixel2.png --emulate-device="Pixel 2" --full-page --delay=3 --overwrite
+        run: capture-website _site/swedish/hitta-hit.html --output=../views/Hitta-hitPagePixel2.png --emulate-device="Pixel 2" --full-page --delay=3 --overwrite
         
       - name: HTML to Image desktop Våra frisörer
-        run: capture-website _site/kiruna/swedish/vara-frisorer.html --output=../views/Vara-frisorerPage.png --full-page --overwrite --userAgent="Mozilla/5.0 (Windows NT 10.0; rv:91.0) Gecko/20100101 Firefox/91.0" --width=2560
+        run: capture-website _site/swedish/vara-frisorer.html --output=../views/Vara-frisorerPage.png --full-page --overwrite --userAgent="Mozilla/5.0 (Windows NT 10.0; rv:91.0) Gecko/20100101 Firefox/91.0" --width=2560
         
       - name: HTML to Image Iphone X Våra frisörer
-        run: capture-website _site/kiruna/swedish/vara-frisorer.html --output=../views/Vara-frisorerPagePhoneX.png --emulate-device="iPhone X" --full-page --delay=3 --overwrite
+        run: capture-website _site/swedish/vara-frisorer.html --output=../views/Vara-frisorerPagePhoneX.png --emulate-device="iPhone X" --full-page --delay=3 --overwrite
 
       - name: HTML to Image Pixel 2 Våra frisörer
-        run: capture-website _site/kiruna/swedish/vara-frisorer.html --output=../views/Vara-frisorerPagePixel2.png --emulate-device="Pixel 2" --full-page --delay=3 --overwrite
+        run: capture-website _site/swedish/vara-frisorer.html --output=../views/Vara-frisorerPagePixel2.png --emulate-device="Pixel 2" --full-page --delay=3 --overwrite
 
       - name: Commit files that has been changed
         run: |

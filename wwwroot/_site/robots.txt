@@ -1,1 +1,1 @@
-Sitemap: /frisor-cleopatra/sitemap.xml
+Sitemap: /sitemap.xml
