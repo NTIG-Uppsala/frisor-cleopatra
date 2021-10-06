@@ -316,11 +316,11 @@ p {
     width: auto;
 }
 .lang-link{
-    margin-left: 1vh;
-    height: 1.9rem;
+    height: 2.4rem;
     width: auto;
 }
 .lang-link img{
+    margin-left: 0px;
     height: 1.9rem;
     width: auto;
 }
@@ -451,12 +451,40 @@ ul.gallery li.gallery:hover {
 /* Makes the image alternative for smaller devices hidden on larger devices */
 @media screen{
     @media screen and (hover: hover){
-        @media screen and (max-width:999px){
+        @media screen and (max-width:860px){
             .hidden-mobile {
                 display: none;
            }
+           .lang-link {
+                margin-left: .2vh;
+           }
+           .logo2 {
+               display: none;
+           }
        }
-        @media only screen and (min-width:1000px){
+        @media only screen and (min-width:861px){
+            .hidden-big-screen {
+                display: none;
+           }
+       }
+        @media screen and (max-width:850px){
+            .hidden-mobile {
+                display: none;
+           }
+           .lang-link{
+            margin-left: .2vh;
+            height: 1.5rem;
+            width: auto;
+            }
+            .lang-link img{
+                height: 1.5rem;
+                width: auto;
+            }
+           .logo2 {
+               display: none;
+           }
+       }
+        @media only screen and (min-width:765px){
             .hidden-big-screen {
                 display: none;
            }
@@ -1153,4 +1181,9 @@ ul.gallery li.gallery:hover {
     padding: 0;
     background-color: #111;
     color: white;
+}
+
+
+.opacity-bg {
+    background-color: rgba(0, 0, 0, 0.6);
 }

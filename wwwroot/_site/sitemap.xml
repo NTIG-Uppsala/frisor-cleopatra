@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/frisor-cleopatra/kiruna/english/find-us.html</loc>
-</url>
-<url>
 <loc>http://localhost:4000/frisor-cleopatra/lulea/english/find-us.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/frisor-cleopatra/kiruna/swedish/hitta-hit.html</loc>
+<loc>http://localhost:4000/frisor-cleopatra/kiruna/english/find-us.html</loc>
 </url>
 <url>
 <loc>http://localhost:4000/frisor-cleopatra/lulea/swedish/hitta-hit.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/frisor-cleopatra/kiruna/swedish/hitta-hit.html</loc>
 </url>
 <url>
 <loc>http://localhost:4000/frisor-cleopatra/lulea/swedish/</loc>
@@ -19,13 +19,16 @@
 <loc>http://localhost:4000/frisor-cleopatra/kiruna/english/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/frisor-cleopatra/</loc>
+<loc>http://localhost:4000/frisor-cleopatra/lulea/english/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/frisor-cleopatra/kiruna/swedish/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/frisor-cleopatra/lulea/english/</loc>
+<loc>http://localhost:4000/frisor-cleopatra/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/frisor-cleopatra/locations-en.html</loc>
 </url>
 <url>
 <loc>http://localhost:4000/frisor-cleopatra/kiruna/english/our-staff.html</loc>

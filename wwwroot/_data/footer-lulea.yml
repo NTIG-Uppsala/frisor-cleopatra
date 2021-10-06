@@ -1,0 +1,9 @@
+- name: phone-number
+  link: href="tel:064-055 53 33"
+  text: 064-055 53 33
+- name: e-mail
+  link: href="mailto:lulea@ntig-uppsala.github.io"
+  text: lulea@ntig-uppsala.github.io
+- name: address
+  link: href="https://www.google.com/maps/dir//F%C3%A4rjledsv%C3%A4gen+38,+961+93+S%C3%B6dra+Sunderbyn/@65.6809385,21.8476816,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x467f677c35c65609:0x800dc210eb80aa54!2m2!1d21.852059!2d65.6809341" target="_blank"
+  text: Färjledsvägen 38<br>961 93 Södra Sunderbyn Luleå

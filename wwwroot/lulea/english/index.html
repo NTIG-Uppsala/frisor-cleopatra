@@ -4,13 +4,13 @@ lang: en
 ref: home
 loc: lulea
 navbar: navigation-eng
-footer: footer.html
+footer: footer-lulea
 ---
 <section class="home bg-tint">
     <div class="bg-image-lulea"></div>  <!-- Background div. Puts an image in background --> 
     <div class="d-flex">
         <div class="d-flex container-lg mt-5 mb-5 main-text">
-            <ul class="standard-text">
+            <ul class="standard-text p-3 opacity-bg rounded-3">
                 <li><h2 class="subtitle">Welcome to the most luxurious salon in Luleå.</h2></li>
                 <li><p class="main-section-app">To book an appointment don't hesitate to call us at <b><a href="tel:0640-555-333">0640-555-333</a></b>.</p></li>
                 <li><p class="main-section-app">You can even book a housecall appointment, to check if we operate in your postal code <b><a href="#Hembesok">click here</a></b>.</p></li>
@@ -18,6 +18,7 @@ footer: footer.html
                     <a href="#Tjanster" class="standard-text btn button noselect">SERVICES</a>
                     <a href="#Oppettider" class="standard-text btn button noselect">OPENING HOURS</a>
                     <a href="#Hembesok" class="standard-text btn button noselect">HOUSECALLS</a>
+                    <a href="{{ site.baseurl }}/" class="standard-text btn button noselect">LOCATIONS</a>
                 </li>
             </ul>
 
@@ -68,7 +69,7 @@ footer: footer.html
                     <p class="text-center">We have recently started doing housecalls. Check if we do housecalls to your postal code in the textbox.</p>
                     <div class="justify-content-center align-items-center text-center">
                         <input style="display: none;" type="text" class="col-xs-1" placeholder="Postalnumber" maxlength="8" id="inputPostalNumber">
-                        <input style="display: none;" class="button inputSubmit" name="submit"  type="submit" id="submitButton" value="Search" onclick="getPostalNumberInput()" />
+                        <input style="display: none;" class="button inputSubmit" name="submit"  type="submit" id="submitButton" value="Search" onclick="getPostalNumberInputLulea()" />
                         <p class="mb-3" id="postalNumberMessage"></p>
                     </div>
                     <p id="hiddenJS" class="text-center" style="display: block;"><b>At the moment we do housecalls to 981 38, 981 39, 981 40 and 981 42.</b></p>

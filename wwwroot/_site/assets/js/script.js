@@ -137,6 +137,16 @@ function checkPostalNumber(input){
     return false;
 }
 
+function checkPostalNumberLulea(input){
+    let validNumbers = [96190, 96191, 96193, 96194];
+        for(let i = 0; i < validNumbers.length;i++){
+            if (validNumbers[i] == input){
+                return true;
+            }
+        }
+    return false;
+}
+
 
 document.onkeydown=function(){
     if(window.event.keyCode=='13'){
@@ -164,6 +174,38 @@ function getPostalNumberInput(){
     }
 
     let IsValid = checkPostalNumber(parseInt(PostalNumber));
+    if(IsValid && isOnlyNumbers){
+        target.innerHTML = "Vi har hembesök till dig!";
+        target.style.display = "block";
+        target.classList.add('text-success');
+        target.classList.remove('text-danger');
+    } else if(!isOnlyNumbers){
+        target.innerHTML = "Du får bara använda siffror i fältet.";
+        target.style.display = "block";
+        target.classList.add('text-danger');
+        target.classList.remove('text-success');
+    } else {
+        target.innerHTML = "Vi har inte hembesök till dig!";
+        target.style.display = "block";
+        target.classList.add('text-danger');
+        target.classList.remove('text-success');
+    }
+    return IsValid; //Returns bool to onclick call to make sure its successful
+}
+
+function getPostalNumberInputLulea(){ 
+    var PostalNumber = document.getElementById('inputPostalNumber').value;
+    PostalNumber = PostalNumber.split(" ").join("");
+    let x = PostalNumber.length;
+    var PostalNumber =  PostalNumber.replace(/[^0-9.]/g, '');
+    let target = document.getElementById('postalNumberMessage');
+    let y = PostalNumber.length;
+    let isOnlyNumbers = true;
+    if(x > y) {
+        isOnlyNumbers = false;
+    }
+
+    let IsValid = checkPostalNumberLulea(parseInt(PostalNumber));
     if(IsValid && isOnlyNumbers){
         target.innerHTML = "Vi har hembesök till dig!";
         target.style.display = "block";
