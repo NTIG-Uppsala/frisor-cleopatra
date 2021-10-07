@@ -8,9 +8,9 @@ $(function () {
         $("#showListDate").css("display", "block");
         $("#showListDay").css("display", "block");
         updateClosedDayList(todaysDate());  //Calls List logic function with todaysdate
-        if (($(document).scrollTop() < 10)) { // If user has scrolled down toggle class affix
-            $(".nav").toggleClass("affix");
-        } //Sets affix for nav class to make bar black
+        if (($(document).scrollTop() < 10)) { // If user has scrolled down toggle class  
+            $(".nav").toggleClass(" ");
+        } //Sets   for nav class to make bar black
         if (matchMedia("(pointer:coarse)").matches) { // Check if device is using touch screen
             $(".navTrigger").css("display", "block"); // Show element .navTrigger
         } else if (matchMedia("(max-width:590px)").matches) { // Check if device is using screen smaller then 590px in width
@@ -45,8 +45,8 @@ $(function () {
     */
     $(".navTrigger").click(function () {
         $(this).toggleClass("active");
-        if ($(document).scrollTop() < 10) { // If user has scrolled down toggle class affix
-            $(".nav").toggleClass("affix");
+        if ($(document).scrollTop() < 10) { // If user has scrolled down toggle class  
+            $(".nav").toggleClass(" ");
         }
 
         $("#mainListDiv").toggleClass("show_list"); // Toggles show list to show client navLinks in a list.
@@ -72,7 +72,7 @@ $(function () {
         if ($(".navTrigger").hasClass("active")) {
             $("#mainListDiv").toggleClass("show_list");
             $(".navTrigger").toggleClass("active");
-            $(".nav").toggleClass("affix");
+            $(".nav").toggleClass(" ");
             enableScroll();
         }
     });
@@ -86,9 +86,9 @@ $(function () {
     $(window).scroll(function () {
         if (disableScroll) {
         } else if ($(document).scrollTop() > 10) { // Checks current position of page
-            $(".nav").addClass("affix");
+            $(".nav").addClass(" ");
         } else {
-            $(".nav").removeClass("affix");
+            $(".nav").removeClass(" ");
         }
     });
 
