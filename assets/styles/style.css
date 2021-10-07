@@ -1192,20 +1192,12 @@ ul.gallery li.gallery:hover {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-.img-blur {
-    filter: blur(0.8px);
-    -webkit-filter: blur(0.8px);
-    transition: 300ms;
-}
-.img-blur:hover {
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-    transition: 500ms;  
-}
 .img-blur img {
+    opacity: 70%;
     transition: 300ms;
 }
 .img-blur:hover img {
+    opacity: 100%;
     transition: 500ms;
     padding: 8px;
 }
