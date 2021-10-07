@@ -128,7 +128,7 @@ Return: Boolean
 */
 
 function checkPostalNumber(input){
-    let validNumbers = [98139, 98140, 98142, 98138];
+    let validNumbers = [98139, 98140, 98142, 98138, '98139', '981 40', '981 42', '981 38'];
         for(let i = 0; i < validNumbers.length;i++){
             if (validNumbers[i] == input){
                 return true;
@@ -138,7 +138,7 @@ function checkPostalNumber(input){
 }
 
 function checkPostalNumberLulea(input){
-    let validNumbers = [96190, 96191, 96193, 96194];
+    let validNumbers = [96190, 96191, 96193, 96194, '961 90', '961 91', '961 93', '961 94'];
         for(let i = 0; i < validNumbers.length;i++){
             if (validNumbers[i] == input){
                 return true;
@@ -151,6 +151,7 @@ function checkPostalNumberLulea(input){
 document.onkeydown=function(){
     if(window.event.keyCode=='13'){
         getPostalNumberInput();
+        getPostalNumberInputLulea();
     }
 }
 
