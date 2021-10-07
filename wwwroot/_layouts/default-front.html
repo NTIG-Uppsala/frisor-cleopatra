@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html lang="sv"> <!-- Sets the language of the website to Swedish -->
+    <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/images/favicon-16x16.png">
+        <link rel="manifest" href="{{ site.baseurl }}/assets/images/site.webmanifest"><!-- Favicon -->
+        
+        <meta charset="utf-8"> <!-- Allows for additional letters such as Å, Ä and Ö -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Set-up for better functionality on mobile phones and smaller devices -->
+        <title>Frisör Cleopatra</title>
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/bootstrap/bootstrap.min.css"> <!-- bootstrap5 stylesheet -->
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/style.css"> <!-- stylesheet for the website -->
+        <script src="{{ site.baseurl }}/assets/js/jquery-3.6.0.min.js"></script> <!-- JQuery document -->
+        <script src="{{ site.baseurl }}/assets/js/script.js"></script> <!-- javaScript document -->
+        <script defer src="{{ site.baseurl }}/assets/js/map.js"></script>
+        {% feed_meta %}
+        {% seo %}
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        {% include navigation.html %}
+        {{ content }}
+        {% include footer-front.html %}
+    </body>
+</html>
